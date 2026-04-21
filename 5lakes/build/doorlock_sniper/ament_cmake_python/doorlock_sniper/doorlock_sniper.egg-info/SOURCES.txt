@@ -4,3 +4,5 @@ doorlock_sniper.egg-info/PKG-INFO
 doorlock_sniper.egg-info/SOURCES.txt
 doorlock_sniper.egg-info/dependency_links.txt
 doorlock_sniper.egg-info/top_level.txt
+doorlock_sniper/msg/__init__.py
+doorlock_sniper/msg/_video_packet.py

@@ -1,0 +1,4 @@
+source;share/doorlock_sniper/local_setup.bash
+source;share/doorlock_sniper/local_setup.dsv
+source;share/doorlock_sniper/local_setup.sh
+source;share/doorlock_sniper/local_setup.zsh

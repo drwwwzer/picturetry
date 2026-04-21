@@ -1,0 +1,17 @@
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/launch/__pycache__/sniper.launch.cpython-310.pyc
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/launch/sniper.launch.py
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/ament_index/resource_index/package_run_dependencies/bringup
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/ament_index/resource_index/parent_prefix_path/bringup
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/environment/ament_prefix_path.sh
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/environment/ament_prefix_path.dsv
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/environment/path.sh
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/environment/path.dsv
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/local_setup.bash
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/local_setup.sh
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/local_setup.zsh
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/local_setup.dsv
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.dsv
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/ament_index/resource_index/packages/bringup
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/cmake/bringupConfig.cmake
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/cmake/bringupConfig-version.cmake
+/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.xml

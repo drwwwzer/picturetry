@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-307b93a5772a96f26802.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "doorlock_sniper__py",
+					"jsonFile" : "directory-doorlock_sniper__py-5a73f4a3e5dd08603a0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper/doorlock_sniper__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "doorlock_sniper",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_doorlock_sniper_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_doorlock_sniper_egg-883be19b4a52ec08a2df.json",
+					"name" : "ament_cmake_python_build_doorlock_sniper_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_doorlock_sniper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_doorlock_sniper-8030aa48308e7a2c1ca5.json",
+					"name" : "ament_cmake_python_copy_doorlock_sniper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper-00e3cb0c5a6d5f948d29.json",
+					"name" : "doorlock_sniper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__cpp-0d72b916f834d2f8d290.json",
+					"name" : "doorlock_sniper__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "doorlock_sniper__py::@77d7895d630ca7eac185",
+					"jsonFile" : "target-doorlock_sniper__py-becbcafd5eaeb8754f92.json",
+					"name" : "doorlock_sniper__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_generator_c-10e89c5a379bdeeeb497.json",
+					"name" : "doorlock_sniper__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_generator_py-ad37a4170c7c5dc2a951.json",
+					"name" : "doorlock_sniper__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_c-234726caf7accc4b6000.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_c__pyext-3703fc301218b75d6e72.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_cpp-be2e01516c56684fb04a.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_fastrtps_c-57a52dbb544bdc96eb30.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_fastrtps_c__pyext-e67044cae6854f687126.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_fastrtps_cpp-7c173baec55ee7402bce.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_introspection_c-1e4c178d57f511ac91c3.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_introspection_c__pyext-10894482ecba91de1e6b.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper__rosidl_typesupport_introspection_cpp-ec69b92f00d1e6033f74.json",
+					"name" : "doorlock_sniper__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doorlock_sniper_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doorlock_sniper_uninstall-3cfba559abb29d0b18a2.json",
+					"name" : "doorlock_sniper_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b93007028817b17de7e4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "video_encoder_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-video_encoder_node-04778a341c00ce2e9c80.json",
+					"name" : "video_encoder_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper",
+		"source" : "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

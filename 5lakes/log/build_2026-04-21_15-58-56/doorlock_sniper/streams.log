@@ -1,0 +1,257 @@
+[0.007s] Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper -DCMAKE_INSTALL_PREFIX=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper
+[0.157s] -- The C compiler identification is GNU 11.4.0
+[0.258s] -- The CXX compiler identification is GNU 11.4.0
+[0.267s] -- Detecting C compiler ABI info
+[0.329s] -- Detecting C compiler ABI info - done
+[0.333s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.337s] -- Detecting C compile features
+[0.337s] -- Detecting C compile features - done
+[0.340s] -- Detecting CXX compiler ABI info
+[0.404s] -- Detecting CXX compiler ABI info - done
+[0.408s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.408s] -- Detecting CXX compile features
+[0.409s] -- Detecting CXX compile features - done
+[0.416s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.512s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.582s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.615s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.617s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.622s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.633s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.641s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.675s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.678s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.741s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.757s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.783s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.790s] -- Looking for pthread.h
+[0.835s] -- Looking for pthread.h - found
+[0.835s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.883s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.884s] -- Found Threads: TRUE  
+[0.927s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.948s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.967s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.976s] -- Found OpenCV: /usr (found version "4.5.4") 
+[0.979s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.984s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.984s] -- Checking for modules 'gstreamer-1.0>=1.4;gstreamer-app-1.0>=1.4'
+[1.000s] --   Found gstreamer-1.0, version 1.20.3
+[1.007s] --   Found gstreamer-app-1.0, version 1.20.1
+[1.177s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.395s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.474s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.490s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.491s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.509s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.509s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.509s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.509s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.527s] -- Found PythonExtra: .so  
+[1.561s] -- Configuring done
+[1.591s] -- Generating done
+[1.598s] -- Build files have been written to: /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper
+[1.605s] Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper -DCMAKE_INSTALL_PREFIX=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper
+[1.606s] Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper -- -j24 -l24
+[1.633s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.640s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.645s] [  6%] Built target ament_cmake_python_copy_doorlock_sniper
+[1.771s] running egg_info
+[1.772s] creating doorlock_sniper.egg-info
+[1.772s] writing doorlock_sniper.egg-info/PKG-INFO
+[1.772s] writing dependency_links to doorlock_sniper.egg-info/dependency_links.txt
+[1.772s] writing top-level names to doorlock_sniper.egg-info/top_level.txt
+[1.772s] writing manifest file 'doorlock_sniper.egg-info/SOURCES.txt'
+[1.773s] reading manifest file 'doorlock_sniper.egg-info/SOURCES.txt'
+[1.773s] writing manifest file 'doorlock_sniper.egg-info/SOURCES.txt'
+[1.783s] [  6%] Built target doorlock_sniper__cpp
+[1.783s] [  9%] [32mBuilding C object CMakeFiles/doorlock_sniper__rosidl_generator_c.dir/rosidl_generator_c/doorlock_sniper/msg/detail/video_packet__functions.c.o[0m
+[1.788s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.789s] [ 12%] Built target ament_cmake_python_build_doorlock_sniper_egg
+[1.790s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.790s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.815s] [ 21%] [32m[1mLinking C shared library libdoorlock_sniper__rosidl_generator_c.so[0m
+[1.843s] [ 21%] Built target doorlock_sniper__rosidl_generator_c
+[1.849s] [ 24%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.849s] [ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.851s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.925s] [ 33%] [32mBuilding CXX object CMakeFiles/doorlock_sniper__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/doorlock_sniper/msg/video_packet__type_support.cpp.o[0m
+[1.938s] [ 36%] [32mBuilding CXX object CMakeFiles/doorlock_sniper__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/doorlock_sniper/msg/detail/video_packet__type_support.cpp.o[0m
+[1.952s] [ 39%] [32mBuilding CXX object CMakeFiles/doorlock_sniper__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/doorlock_sniper/msg/detail/dds_fastrtps/video_packet__type_support.cpp.o[0m
+[1.999s] [ 42%] [32mBuilding CXX object CMakeFiles/doorlock_sniper__rosidl_typesupport_c.dir/rosidl_typesupport_c/doorlock_sniper/msg/video_packet__type_support.cpp.o[0m
+[2.023s] [ 45%] [32m[1mLinking CXX shared library libdoorlock_sniper__rosidl_typesupport_c.so[0m
+[2.032s] [ 48%] [32mBuilding CXX object CMakeFiles/doorlock_sniper__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/doorlock_sniper/msg/detail/video_packet__type_support_c.cpp.o[0m
+[2.034s] [ 51%] [32mBuilding C object CMakeFiles/doorlock_sniper__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/doorlock_sniper/msg/detail/video_packet__type_support.c.o[0m
+[2.059s] [ 51%] Built target doorlock_sniper__rosidl_typesupport_c
+[2.060s] [ 54%] [32m[1mLinking C shared library libdoorlock_sniper__rosidl_typesupport_introspection_c.so[0m
+[2.083s] [ 54%] Built target doorlock_sniper__rosidl_typesupport_introspection_c
+[2.149s] [ 57%] [32m[1mLinking CXX shared library libdoorlock_sniper__rosidl_typesupport_cpp.so[0m
+[2.185s] [ 57%] Built target doorlock_sniper__rosidl_typesupport_cpp
+[2.201s] [ 60%] [32mBuilding CXX object CMakeFiles/video_encoder_node.dir/src/video_encoder_node.cpp.o[0m
+[2.208s] [ 63%] [32m[1mLinking CXX shared library libdoorlock_sniper__rosidl_typesupport_introspection_cpp.so[0m
+[2.209s] [ 66%] [32m[1mLinking CXX shared library libdoorlock_sniper__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.230s] [ 69%] [32m[1mLinking CXX shared library libdoorlock_sniper__rosidl_typesupport_fastrtps_c.so[0m
+[2.241s] [ 69%] Built target doorlock_sniper__rosidl_typesupport_introspection_cpp
+[2.259s] [ 69%] Built target doorlock_sniper__rosidl_typesupport_fastrtps_cpp
+[2.278s] [ 69%] Built target doorlock_sniper__rosidl_typesupport_fastrtps_c
+[2.293s] [ 69%] Built target doorlock_sniper
+[2.307s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.671s] [ 72%] Built target doorlock_sniper__py
+[2.686s] [ 75%] [32mBuilding C object CMakeFiles/doorlock_sniper__rosidl_generator_py.dir/rosidl_generator_py/doorlock_sniper/msg/_video_packet_s.c.o[0m
+[2.838s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/doorlock_sniper/libdoorlock_sniper__rosidl_generator_py.so[0m
+[2.881s] [ 78%] Built target doorlock_sniper__rosidl_generator_py
+[2.900s] [ 87%] [32mBuilding C object CMakeFiles/doorlock_sniper__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/doorlock_sniper/_doorlock_sniper_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.900s] [ 87%] [32mBuilding C object CMakeFiles/doorlock_sniper__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/doorlock_sniper/_doorlock_sniper_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.900s] [ 87%] [32mBuilding C object CMakeFiles/doorlock_sniper__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/doorlock_sniper/_doorlock_sniper_s.ep.rosidl_typesupport_c.c.o[0m
+[3.006s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.014s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.017s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.044s] [ 96%] Built target doorlock_sniper__rosidl_typesupport_fastrtps_c__pyext
+[3.050s] [ 96%] Built target doorlock_sniper__rosidl_typesupport_introspection_c__pyext
+[3.050s] [ 96%] Built target doorlock_sniper__rosidl_typesupport_c__pyext
+[10.333s] [100%] [32m[1mLinking CXX shared library libvideo_encoder_node.so[0m
+[10.536s] [100%] Built target video_encoder_node
+[10.545s] Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper -- -j24 -l24
+[10.546s] Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper
+[10.552s] -- Install configuration: ""
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/ament_index/resource_index/rosidl_interfaces/doorlock_sniper
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__functions.h
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__struct.h
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__type_support.h
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__functions.c
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/video_packet.h
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/rosidl_generator_c__visibility_control.h
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/library_path.sh
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/library_path.dsv
+[10.552s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_generator_c.so
+[10.553s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_generator_c.so" to ""
+[10.553s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper
+[10.553s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg
+[10.553s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail
+[10.553s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__rosidl_typesupport_fastrtps_c.h
+[10.553s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.553s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_fastrtps_c.so
+[10.553s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_fastrtps_c.so" to ""
+[10.553s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper
+[10.553s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg
+[10.553s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail
+[10.553s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__type_support.hpp
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__traits.hpp
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__struct.hpp
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__builder.hpp
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/video_packet.hpp
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.554s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper
+[10.554s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg
+[10.554s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/dds_fastrtps
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.554s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_fastrtps_cpp.so
+[10.554s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.555s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper
+[10.555s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg
+[10.555s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail
+[10.555s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__rosidl_typesupport_introspection_c.h
+[10.555s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__type_support.c
+[10.555s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.555s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_introspection_c.so
+[10.555s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_introspection_c.so" to ""
+[10.555s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_c.so
+[10.555s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_c.so" to ""
+[10.555s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper
+[10.555s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg
+[10.556s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__type_support.cpp
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/doorlock_sniper/msg/detail/video_packet__rosidl_typesupport_introspection_cpp.hpp
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_introspection_cpp.so
+[10.556s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_introspection_cpp.so" to ""
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_cpp.so
+[10.556s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_typesupport_cpp.so" to ""
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/pythonpath.sh
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/pythonpath.dsv
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper-0.1.0-py3.10.egg-info
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper-0.1.0-py3.10.egg-info/SOURCES.txt
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper-0.1.0-py3.10.egg-info/dependency_links.txt
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper-0.1.0-py3.10.egg-info/PKG-INFO
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper-0.1.0-py3.10.egg-info/top_level.txt
+[10.556s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/_doorlock_sniper_s.ep.rosidl_typesupport_introspection_c.c
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/__init__.py
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/_doorlock_sniper_s.ep.rosidl_typesupport_c.c
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/_doorlock_sniper_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/libdoorlock_sniper__rosidl_generator_py.so
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg/_video_packet.py
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg/_video_packet_s.c
+[10.557s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg/__init__.py
+[10.579s] Listing '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper'...
+[10.579s] Compiling '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/__init__.py'...
+[10.579s] Listing '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg'...
+[10.579s] Compiling '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg/__init__.py'...
+[10.579s] Compiling '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/msg/_video_packet.py'...
+[10.582s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.582s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.582s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.582s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.583s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.583s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages/doorlock_sniper/doorlock_sniper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.583s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_generator_py.so
+[10.583s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libdoorlock_sniper__rosidl_generator_py.so" to ""
+[10.583s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/msg/VideoPacket.idl
+[10.583s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/msg/VideoPacket.msg
+[10.583s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libvideo_encoder_node.so
+[10.584s] -- Set runtime path of "/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/libvideo_encoder_node.so" to ""
+[10.584s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include
+[10.584s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/include/doorlock_sniper/video_encoder_node.hpp
+[10.584s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/msg
+[10.584s] -- Up-to-date: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/msg/VideoPacket.msg
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/doorlock_sniper/udp_forwarder.py
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/ament_index/resource_index/package_run_dependencies/doorlock_sniper
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/ament_index/resource_index/parent_prefix_path/doorlock_sniper
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/ament_prefix_path.sh
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/ament_prefix_path.dsv
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/path.sh
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/environment/path.dsv
+[10.584s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/local_setup.bash
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/local_setup.sh
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/local_setup.zsh
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/local_setup.dsv
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.dsv
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/ament_index/resource_index/packages/doorlock_sniper
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_generator_cExport.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_generator_cExport-noconfig.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_typesupport_fastrtps_cExport.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_generator_cppExport.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.585s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_introspection_cExport.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_cExport.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_cExport-noconfig.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_introspection_cppExport.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_cppExport.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniper__rosidl_typesupport_cppExport-noconfig.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_generator_pyExport.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/export_doorlock_sniper__rosidl_generator_pyExport-noconfig.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/ament_index/resource_index/rclcpp_components/doorlock_sniper
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/rosidl_cmake-extras.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/ament_cmake_export_libraries-extras.cmake
+[10.586s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/ament_cmake_export_targets-extras.cmake
+[10.587s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.587s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.587s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniperConfig.cmake
+[10.587s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/cmake/doorlock_sniperConfig-version.cmake
+[10.587s] -- Installing: /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.xml
+[10.588s] Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper

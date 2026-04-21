@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from doorlock_sniper/msg/VideoPacket.msg
+// generated code does not contain a copyright notice
+
+
+module doorlock_sniper {
+  module msg {
+    typedef uint8 uint8__150[150];
+    @verbatim (language="comment", text=
+      "流式视频数据包 - 固定150字节")
+    struct VideoPacket {
+      @verbatim (language="comment", text=
+        "全局包序号")
+      uint64 sequence_id;
+
+      @verbatim (language="comment", text=
+        "ROS2 时间戳")
+      uint64 timestamp_ns;
+
+      @verbatim (language="comment", text=
+        "固定150字节负载（最后一包不足则补零）")
+      uint8__150 data;
+    };
+  };
+};

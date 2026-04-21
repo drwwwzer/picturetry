@@ -1,0 +1,13 @@
+{
+  "package_name": "realsense2_camera_msgs",
+  "non_idl_tuples": [
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:msg/IMUInfo.msg",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:msg/Extrinsics.msg",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:msg/Metadata.msg",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:msg/RGBD.msg",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:srv/DeviceInfo.srv",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:srv/CalibConfigRead.srv",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:srv/CalibConfigWrite.srv",
+    "/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs:action/TriggeredCalibration.action"
+  ]
+}

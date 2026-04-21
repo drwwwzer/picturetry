@@ -1,0 +1,4 @@
+source;share/doorlock_sniper/environment/ament_prefix_path.sh
+source;share/doorlock_sniper/environment/library_path.sh
+source;share/doorlock_sniper/environment/path.sh
+source;share/doorlock_sniper/environment/pythonpath.sh

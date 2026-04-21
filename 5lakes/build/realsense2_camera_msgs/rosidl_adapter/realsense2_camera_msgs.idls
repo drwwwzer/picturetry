@@ -1,0 +1,8 @@
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/IMUInfo.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/Extrinsics.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/Metadata.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/RGBD.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/DeviceInfo.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/CalibConfigRead.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/CalibConfigWrite.idl
+/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:action/TriggeredCalibration.idl

@@ -1,0 +1,21 @@
+[1.039s] Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder': AMENT_PREFIX_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper LD_LIBRARY_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/lib:/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages:/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/doorlock_decoder build --build-base /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/build install --record /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/install.log --single-version-externally-managed install_data
+[1.151s] running egg_info
+[1.151s] writing ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/PKG-INFO
+[1.151s] writing dependency_links to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/dependency_links.txt
+[1.151s] writing entry points to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/entry_points.txt
+[1.151s] writing requirements to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/requires.txt
+[1.151s] writing top-level names to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/top_level.txt
+[1.152s] reading manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+[1.152s] writing manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+[1.152s] running build
+[1.152s] running build_py
+[1.152s] running install
+[1.152s] running install_lib
+[1.153s] running install_data
+[1.153s] running install_egg_info
+[1.154s] removing '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder-0.1.0-py3.10.egg-info' (and everything under it)
+[1.154s] Copying ../../../../build/doorlock_decoder/doorlock_decoder.egg-info to /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder-0.1.0-py3.10.egg-info
+[1.154s] running install_scripts
+[1.166s] Installing decoder_node script to /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/doorlock_decoder
+[1.166s] writing list of installed files to '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/install.log'
+[1.182s] Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder' returned '0': AMENT_PREFIX_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper LD_LIBRARY_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/lib:/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages:/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/doorlock_decoder build --build-base /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/build install --record /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/install.log --single-version-externally-managed install_data

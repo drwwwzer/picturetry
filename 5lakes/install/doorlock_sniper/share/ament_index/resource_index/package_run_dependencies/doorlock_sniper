@@ -1,0 +1,1 @@
+rclcpp;rclcpp_components;sensor_msgs;cv_bridge;std_msgs;libopencv-dev;libgstreamer1.0-dev;libgstreamer-plugins-base1.0-dev;rosidl_default_runtime;ament_lint_auto;ament_lint_common

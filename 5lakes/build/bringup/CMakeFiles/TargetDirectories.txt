@@ -1,0 +1,9 @@
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/uninstall.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/bringup_uninstall.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/test.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/edit_cache.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/rebuild_cache.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/list_install_components.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/install.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/install/local.dir
+/home/drwwwzer/many/RM_myself/5lakes/build/bringup/CMakeFiles/install/strip.dir

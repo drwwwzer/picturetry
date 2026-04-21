@@ -1,0 +1,37 @@
+[0.394s] Invoking command in '/home/drwwwzer/index of open sources/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder': AMENT_PREFIX_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper LD_LIBRARY_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages:/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/doorlock_decoder build --build-base /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build install --record /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/install.log --single-version-externally-managed install_data
+[0.530s] running egg_info
+[0.531s] creating ../../../../build/doorlock_decoder/doorlock_decoder.egg-info
+[0.531s] writing ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/PKG-INFO
+[0.531s] writing dependency_links to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/dependency_links.txt
+[0.531s] writing entry points to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/entry_points.txt
+[0.531s] writing requirements to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/requires.txt
+[0.531s] writing top-level names to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/top_level.txt
+[0.531s] writing manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+[0.532s] reading manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+[0.533s] writing manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+[0.533s] running build
+[0.533s] running build_py
+[0.533s] creating /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build
+[0.533s] creating /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build/lib
+[0.533s] creating /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build/lib/doorlock_decoder
+[0.533s] copying doorlock_decoder/__init__.py -> /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build/lib/doorlock_decoder
+[0.533s] copying doorlock_decoder/video_decoder_node.py -> /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build/lib/doorlock_decoder
+[0.533s] running install
+[0.533s] running install_lib
+[0.534s] creating /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder
+[0.534s] copying /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build/lib/doorlock_decoder/__init__.py -> /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder
+[0.534s] copying /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build/lib/doorlock_decoder/video_decoder_node.py -> /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder
+[0.534s] byte-compiling /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder/__init__.py to __init__.cpython-310.pyc
+[0.534s] byte-compiling /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder/video_decoder_node.py to video_decoder_node.cpython-310.pyc
+[0.535s] running install_data
+[0.535s] creating /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/share/ament_index
+[0.535s] creating /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/share/ament_index/resource_index
+[0.536s] creating /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/share/ament_index/resource_index/packages
+[0.536s] copying resource/doorlock_decoder -> /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/share/ament_index/resource_index/packages
+[0.536s] copying package.xml -> /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/share/doorlock_decoder
+[0.536s] running install_egg_info
+[0.537s] Copying ../../../../build/doorlock_decoder/doorlock_decoder.egg-info to /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder-0.1.0-py3.10.egg-info
+[0.537s] running install_scripts
+[0.549s] Installing decoder_node script to /home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/doorlock_decoder
+[0.549s] writing list of installed files to '/home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/install.log'
+[0.564s] Invoked command in '/home/drwwwzer/index of open sources/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder' returned '0': AMENT_PREFIX_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper LD_LIBRARY_PATH=/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/drwwwzer/index of open sources/5lakes/install/doorlock_decoder/lib/python3.10/site-packages:/home/drwwwzer/index of open sources/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/doorlock_decoder build --build-base /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/build install --record /home/drwwwzer/index of open sources/5lakes/build/doorlock_decoder/install.log --single-version-externally-managed install_data

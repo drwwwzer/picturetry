@@ -1,0 +1,1 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper/CMakeCache.txt is different than the directory /home/drwwwzer/index of open sources/5lakes/build/doorlock_sniper where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m

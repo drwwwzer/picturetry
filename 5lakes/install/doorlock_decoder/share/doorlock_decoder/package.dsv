@@ -1,0 +1,6 @@
+source;share/doorlock_decoder/hook/pythonpath.ps1
+source;share/doorlock_decoder/hook/pythonpath.dsv
+source;share/doorlock_decoder/hook/pythonpath.sh
+source;share/doorlock_decoder/hook/ament_prefix_path.ps1
+source;share/doorlock_decoder/hook/ament_prefix_path.dsv
+source;share/doorlock_decoder/hook/ament_prefix_path.sh

@@ -1,0 +1,1 @@
+cv_bridge:libgstreamer-plugins-base1.0-dev:libgstreamer1.0-dev:libopencv-dev:rclcpp:rclcpp_components:rosidl_default_runtime:sensor_msgs:std_msgs

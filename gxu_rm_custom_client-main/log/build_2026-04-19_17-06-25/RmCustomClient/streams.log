@@ -1,0 +1,6 @@
+[0.010s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.060s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.085s] [ 18%] Built target RmCustomClient_autogen
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.128s] [100%] Built target RmCustomClient
+[0.139s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '0': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

@@ -1,0 +1,16 @@
+[0.007s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.037s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.154s] [ 18%] Built target RmCustomClient_autogen
+[0.165s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.186s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/RmCustomClient_autogen/mocs_compilation.cpp.o[0m
+[0.187s] [ 36%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[0.188s] [ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/VideoReceiver.cpp.o[0m
+[0.189s] [ 54%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
+[1.325s] [ 63%] [32m[1mLinking CXX executable RmCustomClient[0m
+[1.549s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::processData(unsigned char const*, int)':
+[1.549s] VideoDecoder.cpp:(.text+0x8cb): undefined reference to `VideoDecoder::receiveFrames()'
+[1.567s] collect2: error: ld returned 1 exit status
+[1.568s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+[1.568s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[1.568s] gmake: *** [Makefile:91：all] 错误 2
+[1.570s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

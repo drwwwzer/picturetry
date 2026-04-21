@@ -1,0 +1,31 @@
+[  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[ 18%] Built target RmCustomClient_autogen
+[35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/VideoReceiver.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/RmCustomClient_autogen/mocs_compilation.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:[m[K In constructor ‘[01m[KVideoReceiver::VideoReceiver(quint16, QObject*)[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:9:24:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KVideoReceiver[m[K’ does not have any field named ‘[01m[Km_udpSocket[m[K’
+    9 |     : QObject(parent), [01;31m[Km_udpSocket[m[K(new QUdpSocket(this))
+      |                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km_udpSocket[m[K’ was not declared in this scope; did you mean ‘[01m[KQUdpSocket[m[K’?
+   12 |     [01;31m[Km_udpSocket[m[K->setSocketOption(QAbstractSocket::ReceiveBufferSizeSocketOption, 8 * 1024 * 1024);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KQUdpSocket[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:21:64:[m[K [01;31m[Kerror: [m[K‘[01m[KcleanOldFrames[m[K’ is not a member of ‘[01m[KVideoReceiver[m[K’
+   21 |         connect(timer, &QTimer::timeout, this, &VideoReceiver::[01;31m[KcleanOldFrames[m[K);
+      |                                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:[m[K In destructor ‘[01m[Kvirtual VideoReceiver::~VideoReceiver()[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km_udpSocket[m[K’ was not declared in this scope; did you mean ‘[01m[KQUdpSocket[m[K’?
+   31 |     [01;31m[Km_udpSocket[m[K->close();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KQUdpSocket[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:[m[K In member function ‘[01m[Kvoid VideoReceiver::readPendingDatagrams()[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/network/VideoReceiver.cpp:59:12:[m[K [01;31m[Kerror: [m[K‘[01m[Km_udpSocket[m[K’ was not declared in this scope; did you mean ‘[01m[KQUdpSocket[m[K’?
+   59 |     while ([01;31m[Km_udpSocket[m[K->hasPendingDatagrams()) {
+      |            [01;31m[K^~~~~~~~~~~[m[K
+      |            [32m[KQUdpSocket[m[K
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:132：CMakeFiles/RmCustomClient.dir/network/VideoReceiver.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

@@ -1,0 +1,8 @@
+[0.007s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.064s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.093s] [ 18%] Built target RmCustomClient_autogen
+[0.110s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.130s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[1.056s] [ 36%] [32m[1mLinking CXX executable RmCustomClient[0m
+[1.393s] [100%] Built target RmCustomClient
+[1.409s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '0': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

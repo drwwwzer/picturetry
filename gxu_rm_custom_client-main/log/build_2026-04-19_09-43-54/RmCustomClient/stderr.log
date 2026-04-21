@@ -1,0 +1,15 @@
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::processData(const uint8_t*, int)[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:106:13:[m[K [01;31m[Kerror: [m[K‘[01m[Km_decodeErrors[m[K’ was not declared in this scope
+  106 |             [01;31m[Km_decodeErrors[m[K++;
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:115:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km_decodeErrors[m[K’ was not declared in this scope
+  115 |                 [01;31m[Km_decodeErrors[m[K++;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:118:13:[m[K [01;31m[Kerror: [m[K‘[01m[KreceiveFrames[m[K’ was not declared in this scope; did you mean ‘[01m[Kreceivers[m[K’?
+  118 |             [01;31m[KreceiveFrames[m[K();
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Kreceivers[m[K
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

@@ -1,0 +1,24 @@
+[0.006s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.043s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.145s] [ 18%] Built target RmCustomClient_autogen
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.171s] [ 36%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/RmCustomClient_autogen/mocs_compilation.cpp.o[0m
+[0.171s] [ 36%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/VideoReceiver.cpp.o[0m
+[0.172s] [ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
+[0.172s] [ 54%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[0.689s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::processData(const uint8_t*, int)[m[K’:
+[0.690s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:106:13:[m[K [01;31m[Kerror: [m[K‘[01m[Km_decodeErrors[m[K’ was not declared in this scope
+[0.690s]   106 |             [01;31m[Km_decodeErrors[m[K++;
+[0.690s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.695s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:115:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km_decodeErrors[m[K’ was not declared in this scope
+[0.695s]   115 |                 [01;31m[Km_decodeErrors[m[K++;
+[0.695s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.700s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:118:13:[m[K [01;31m[Kerror: [m[K‘[01m[KreceiveFrames[m[K’ was not declared in this scope; did you mean ‘[01m[Kreceivers[m[K’?
+[0.700s]   118 |             [01;31m[KreceiveFrames[m[K();
+[0.700s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[0.700s]       |             [32m[Kreceivers[m[K
+[0.792s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+[0.792s] gmake[2]: *** 正在等待未完成的任务....
+[1.318s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[1.318s] gmake: *** [Makefile:91：all] 错误 2
+[1.320s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

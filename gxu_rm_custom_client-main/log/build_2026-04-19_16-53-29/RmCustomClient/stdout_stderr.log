@@ -1,0 +1,20 @@
+[  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[ 18%] Built target RmCustomClient_autogen
+[35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvirtual void VideoDecoder::run()[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:99:33:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   99 | void VideoDecoder::receiveFrames[01;31m[K([m[K)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:158:31:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  158 | void VideoDecoder::processData[01;31m[K([m[Kconst uint8_t *data, int size)
+      |                               [01;31m[K^[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:187:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  187 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:79:26:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   79 | void VideoDecoder::run() [01;36m[K{[m[K
+      |                          [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

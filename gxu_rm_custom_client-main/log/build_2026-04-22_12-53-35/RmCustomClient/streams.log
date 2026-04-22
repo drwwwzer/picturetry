@@ -1,0 +1,25 @@
+[0.006s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.048s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.073s] [ 18%] Built target RmCustomClient_autogen
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.111s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
+[0.111s] [ 36%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/main.cpp.o[0m
+[0.637s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.637s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/main.cpp:26:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint av_lockmgr_register(int (*)(void**, AVLockOp))[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[0.637s]    26 | [01;35m[Kr(ffmpeg_lock_cb)[m[K;
+[0.637s]       | [01;35m[K~^~~~~~~~~~~~~~~~[m[K
+[0.637s] 
+[0.637s] In file included from [01m[K/usr/include/x86_64-linux-gnu/libavformat/avformat.h:312[m[K,
+[0.637s]                  from [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/main.cpp:4[m[K:
+[0.637s] [01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4160:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[0.637s]  4160 |  [01;36m[Kav_lockmgr_register[m[K(int (*cb)(void **mutex, enum AVLockOp op));
+[0.637s]       |  [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.637s] 
+[1.206s] [ 45%] [32m[1mLinking CXX executable RmCustomClient[0m
+[1.432s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/main.cpp.o: in function `main':
+[1.432s] main.cpp:(.text+0x11e): undefined reference to `av_lockmgr_register(int (*)(void**, AVLockOp))'
+[1.449s] collect2: error: ld returned 1 exit status
+[1.450s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+[1.450s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[1.450s] gmake: *** [Makefile:91：all] 错误 2
+[1.452s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

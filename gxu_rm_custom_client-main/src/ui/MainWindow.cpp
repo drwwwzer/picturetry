@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     // 初始化网络与解码层
     m_videoReceiver = new VideoReceiver(3334, this);
     m_videoDecoder = new VideoDecoder(AV_CODEC_ID_HEVC, this);        // 官方 UDP HEVC 流
-    // m_customVideoDecoder = new VideoDecoder(AV_CODEC_ID_H264, this);  // 自定义 MQTT H264 流,调试时禁用
+    m_customVideoDecoder = new VideoDecoder(AV_CODEC_ID_H264, this);  // 自定义 MQTT H264 流
     
     m_mqttManager = new MqttManager("101", this);
     m_mqttManager->connectToBroker("192.168.12.1", 3333);//原始为192.168.1.30
@@ -27,11 +27,11 @@ MainWindow::MainWindow(QWidget *parent)
     connect(m_videoReceiver, &VideoReceiver::dataReceived, m_videoDecoder, &VideoDecoder::pushData);
     
     // 绑定 MQTT 0x0310 自定义数据流到 自定义图传解码线程
-    // connect(&RobotState::instance(), &RobotState::customVideoReceived, m_customVideoDecoder, &VideoDecoder::pushData, Qt::QueuedConnection);调试时禁用
+    connect(&RobotState::instance(), &RobotState::customVideoReceived, m_customVideoDecoder, &VideoDecoder::pushData, Qt::QueuedConnection);
     
     // 绑定解码线程输出到主线程渲染
     connect(m_videoDecoder, &VideoDecoder::frameReady, this, &MainWindow::onOfficialFrameReady, Qt::QueuedConnection);
-    // connect(m_customVideoDecoder, &VideoDecoder::frameReady, this, &MainWindow::onCustomFrameReady, Qt::QueuedConnection);调试时禁用
+    connect(m_customVideoDecoder, &VideoDecoder::frameReady, this, &MainWindow::onCustomFrameReady, Qt::QueuedConnection);
 
     // 绑定数据模型变化到UI更新
     connect(&RobotState::instance(), &RobotState::stateUpdated, this, [this](){ update(); });
@@ -39,7 +39,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // 启动解码线程并赋予高线程优先级，保障其吞吐能力
     m_videoDecoder->start(QThread::HighPriority);
-    // m_customVideoDecoder->start(QThread::HighPriority);调试时禁用
+    m_customVideoDecoder->start(QThread::HighPriority);
 
     // 开启鼠标滑动追踪
     setMouseTracking(true);

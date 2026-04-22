@@ -80,8 +80,6 @@ void VideoDecoder::run()
 {
     qDebug() << "🚀 VideoDecoder thread started";
     while (m_running) {
-        // ... 处理刷新请求 ...
-
         QByteArray data;
         {
             QMutexLocker locker(&m_mutex);
@@ -90,14 +88,13 @@ void VideoDecoder::run()
                 m_queue.pop_front();
             }
         }
-
         if (!data.isEmpty()) {
-            QMutexLocker locker(&m_mutex); // 保护 m_streamBuffer
-            m_streamBuffer.append(data);
-        }
-
-        // 只要缓冲区有足够数据，就尝试解析
-        if (m_streamBuffer.size() > 0) {
+            {
+                QMutexLocker locker(&m_mutex);
+                m_streamBuffer.append(data);
+            }
+            
+            // 处理缓冲区，但不要解锁
             processBuffer();
         } else {
             QThread::msleep(2);
@@ -231,49 +228,40 @@ void VideoDecoder::receiveFrames()
 void VideoDecoder::processBuffer()
 {
     if (!m_parser || !m_codecCtx) return;
-
-    QMutexLocker locker(&m_mutex);  // 🆕 加锁保护 m_streamBuffer
+    QMutexLocker locker(&m_mutex);  // 保持加锁状态
+    
     const uint8_t *data_ptr = reinterpret_cast<const uint8_t*>(m_streamBuffer.constData());
     int data_size = m_streamBuffer.size();
-
     while (data_size > 0) {
         int parsed_len = av_parser_parse2(m_parser, m_codecCtx,
                                           &m_packet->data, &m_packet->size,
                                           data_ptr, data_size,
                                           AV_NOPTS_VALUE, AV_NOPTS_VALUE, 0);
-
         if (parsed_len < 0) {
             m_decodeErrors++;
             qWarning() << "❌ av_parser_parse2 error:" << parsed_len;
             break;
         }
-
-        // 移除已解析的数据
         if (parsed_len > 0) {
             m_streamBuffer.remove(0, parsed_len);
             data_ptr = reinterpret_cast<const uint8_t*>(m_streamBuffer.constData());
             data_size = m_streamBuffer.size();
         } else {
-            // 解析器需要更多数据，保留缓冲区内容，退出循环
             break;
         }
-
         if (m_packet->size > 0) {
-            // 🆕 添加 packet 产出日志
             static int pktCount = 0;
             if (++pktCount % 50 == 0) {
                 qDebug() << "📦 Parser produced packet, size:" << m_packet->size;
             }
-
             int ret = avcodec_send_packet(m_codecCtx, m_packet);
             if (ret < 0 && ret != AVERROR(EAGAIN) && ret != AVERROR_EOF) {
                 m_decodeErrors++;
             }
             av_packet_unref(m_packet);
-            // 注意：receiveFrames 可能发射信号，临时解锁避免死锁
-            locker.unlock();
+            
+            // 重要：不要解锁！直接调用receiveFrames
             receiveFrames();
-            locker.relock();
         }
     }
 }

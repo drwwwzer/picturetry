@@ -48,7 +48,7 @@ private:
     MqttManager *m_mqttManager = nullptr;
     
     QImage m_currentFrame;
-    bool m_useCustomVideo = false; // 按 V 切换图传源
+    bool m_useCustomVideo = false; // 按 V 切换图传源,原为false调试时暂设为true
     
     QTimer *m_controlTimer = nullptr;
 

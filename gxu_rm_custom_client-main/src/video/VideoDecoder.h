@@ -15,7 +15,7 @@ extern "C" {
 class VideoDecoder : public QThread {
     Q_OBJECT
 public:
-    explicit VideoDecoder(AVCodecID codecId = AV_CODEC_ID_HEVC, QObject *parent = nullptr);
+    explicit VideoDecoder(AVCodecID codecId = AV_CODEC_ID_H264, QObject *parent = nullptr);//AV_CODEC_ID_HEVC
     ~VideoDecoder();
 
     // 接收子线程安全的调用
@@ -29,7 +29,8 @@ protected:
     void run() override;
 
 private:
-    void processData(const uint8_t *data, int size);
+    void processBuffer();
+    // void processData(const uint8_t *data, int size);
     void receiveFrames(); 
 
     // FFmpeg structures
@@ -51,6 +52,7 @@ private:
 
     bool m_running = true;
     QMutex m_mutex;
+    QByteArray m_streamBuffer; 
     std::list<QByteArray> m_queue;
 };
 

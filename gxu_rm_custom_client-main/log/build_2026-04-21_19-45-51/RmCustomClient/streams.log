@@ -1,0 +1,17 @@
+[0.007s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.052s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.077s] [ 18%] Built target RmCustomClient_autogen
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.119s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[0.626s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::receiveFrames()[m[K’:
+[0.626s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:108:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktatic[m[K’ was not declared in this scope; did you mean ‘[01m[Kstatic[m[K’?
+[0.626s]   108 |             [01;31m[Ktatic[m[K int frameCount = 0;
+[0.626s]       |             [01;31m[K^~~~~[m[K
+[0.626s]       |             [32m[Kstatic[m[K
+[0.630s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:109:19:[m[K [01;31m[Kerror: [m[K‘[01m[KframeCount[m[K’ was not declared in this scope
+[0.630s]   109 |             if (++[01;31m[KframeCount[m[K % 30 == 0) {
+[0.630s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[0.721s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+[0.721s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[0.721s] gmake: *** [Makefile:91：all] 错误 2
+[0.723s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

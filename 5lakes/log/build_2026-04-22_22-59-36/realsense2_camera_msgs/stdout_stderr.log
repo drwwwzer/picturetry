@@ -1,0 +1,32 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[31mCMake Error at /opt/ros/humble/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake:179 (find_package):
+  By not providing "Findament_cmake_cppcheck.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ament_cmake_cppcheck", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "ament_cmake_cppcheck" with any of the following names:
+
+    ament_cmake_cppcheckConfig.cmake
+    ament_cmake_cppcheck-config.cmake
+
+  Add the installation prefix of "ament_cmake_cppcheck" to CMAKE_PREFIX_PATH
+  or set "ament_cmake_cppcheck_DIR" to a directory containing one of the
+  above files.  If "ament_cmake_cppcheck" provides a separate development
+  package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:43 (rosidl_generate_interfaces)
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:2259：cmake_check_build_system] 错误 1

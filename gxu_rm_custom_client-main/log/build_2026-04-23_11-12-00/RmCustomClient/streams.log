@@ -1,0 +1,17 @@
+[0.009s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.070s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.096s] [ 18%] Built target RmCustomClient_autogen
+[0.114s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.138s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[0.869s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvirtual void VideoDecoder::run()[m[K’:
+[0.870s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:121:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+[0.870s]   121 |         } [01;31m[Kelse[m[K {
+[0.870s]       |           [01;31m[K^~~~[m[K
+[0.870s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K At global scope:
+[0.870s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:125:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[0.870s]   125 | [01;31m[K}[m[K
+[0.870s]       | [01;31m[K^[m[K
+[1.024s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+[1.024s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[1.024s] gmake: *** [Makefile:91：all] 错误 2
+[1.027s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

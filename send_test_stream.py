@@ -43,4 +43,7 @@ def send_h264_file(filename):
     sock.close()
 
 if __name__ == "__main__":
-    send_h264_file("test_stream.h264")
+    while True:
+        send_h264_file("test_stream.h264")
+        print("Looping test stream...")
+        time.sleep(1)

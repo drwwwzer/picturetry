@@ -1,0 +1,37 @@
+[  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[ 18%] Built target RmCustomClient_autogen
+[ 27%] [32m[1mLinking CXX executable RmCustomClient[0m
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::MqttManager(QString const&, QObject*)':
+MqttManager.cpp:(.text+0x9e): undefined reference to `mosquitto_lib_init'
+/usr/bin/ld: MqttManager.cpp:(.text+0xd4): undefined reference to `mosquitto_new'
+/usr/bin/ld: MqttManager.cpp:(.text+0x164): undefined reference to `mosquitto_connect_callback_set'
+/usr/bin/ld: MqttManager.cpp:(.text+0x17e): undefined reference to `mosquitto_disconnect_callback_set'
+/usr/bin/ld: MqttManager.cpp:(.text+0x198): undefined reference to `mosquitto_message_callback_set'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::~MqttManager()':
+MqttManager.cpp:(.text+0x299): undefined reference to `mosquitto_disconnect'
+/usr/bin/ld: MqttManager.cpp:(.text+0x2ae): undefined reference to `mosquitto_loop_stop'
+/usr/bin/ld: MqttManager.cpp:(.text+0x2be): undefined reference to `mosquitto_destroy'
+/usr/bin/ld: MqttManager.cpp:(.text+0x2c3): undefined reference to `mosquitto_lib_cleanup'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::connectToBroker(QString const&, unsigned short)':
+MqttManager.cpp:(.text+0x412): undefined reference to `mosquitto_connect_async'
+/usr/bin/ld: MqttManager.cpp:(.text+0x437): undefined reference to `mosquitto_loop_start'
+/usr/bin/ld: MqttManager.cpp:(.text+0x48d): undefined reference to `mosquitto_strerror'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::disconnectFromBroker()':
+MqttManager.cpp:(.text+0x549): undefined reference to `mosquitto_disconnect'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::publishMsg(QString const&, QByteArray const&)':
+MqttManager.cpp:(.text+0x5ee): undefined reference to `mosquitto_publish'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::on_connect_cb(mosquitto*, void*, int)':
+MqttManager.cpp:(.text+0x7b4): undefined reference to `mosquitto_subscribe'
+/usr/bin/ld: MqttManager.cpp:(.text+0x7d1): undefined reference to `mosquitto_subscribe'
+/usr/bin/ld: MqttManager.cpp:(.text+0x7ee): undefined reference to `mosquitto_subscribe'
+/usr/bin/ld: MqttManager.cpp:(.text+0x80b): undefined reference to `mosquitto_subscribe'
+/usr/bin/ld: MqttManager.cpp:(.text+0x828): undefined reference to `mosquitto_subscribe'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o:MqttManager.cpp:(.text+0x845): more undefined references to `mosquitto_subscribe' follow
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::on_connect_cb(mosquitto*, void*, int)':
+MqttManager.cpp:(.text+0x8a7): undefined reference to `mosquitto_connack_string'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::receiveFrames()':
+VideoDecoder.cpp:(.text+0xe45): undefined reference to `av_image_alloc(unsigned char**, int*, int, int, AVPixelFormat, int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

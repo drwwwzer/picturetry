@@ -59,6 +59,11 @@ void VideoReceiver::readPendingDatagrams()
     while (m_udpSocket->hasPendingDatagrams()) {
         QNetworkDatagram datagram = m_udpSocket->receiveDatagram();
         QByteArray data = datagram.data();
+                // 🆕 添加日志，打印实际收到的包大小
+        static int logCount = 0;
+        if (++logCount <= 5) {
+            qDebug() << "📏 Received datagram size:" << data.size() << "(expected:" << TOTAL_PACKET_SIZE << ")";
+        }
 
         // 2. 严格校验包大小
         if (data.size() != TOTAL_PACKET_SIZE) {

@@ -1,0 +1,48 @@
+[0.005s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.077s] [33mCMake Warning at CMakeLists.txt:23 (message):
+[0.077s]   Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+[0.078s]   be disabled or mocked.
+[0.078s] 
+[0.078s] [0m
+[0.080s] -- Configuring done
+[0.093s] -- Generating done
+[0.095s] -- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[0.127s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.154s] [ 18%] Built target RmCustomClient_autogen
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.198s] [ 27%] [32m[1mLinking CXX executable RmCustomClient[0m
+[0.417s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::MqttManager(QString const&, QObject*)':
+[0.417s] MqttManager.cpp:(.text+0x9e): undefined reference to `mosquitto_lib_init'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0xd4): undefined reference to `mosquitto_new'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x164): undefined reference to `mosquitto_connect_callback_set'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x17e): undefined reference to `mosquitto_disconnect_callback_set'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x198): undefined reference to `mosquitto_message_callback_set'
+[0.417s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::~MqttManager()':
+[0.417s] MqttManager.cpp:(.text+0x299): undefined reference to `mosquitto_disconnect'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x2ae): undefined reference to `mosquitto_loop_stop'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x2be): undefined reference to `mosquitto_destroy'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x2c3): undefined reference to `mosquitto_lib_cleanup'
+[0.417s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::connectToBroker(QString const&, unsigned short)':
+[0.417s] MqttManager.cpp:(.text+0x412): undefined reference to `mosquitto_connect_async'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x437): undefined reference to `mosquitto_loop_start'
+[0.417s] /usr/bin/ld: MqttManager.cpp:(.text+0x48d): undefined reference to `mosquitto_strerror'
+[0.417s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::disconnectFromBroker()':
+[0.417s] MqttManager.cpp:(.text+0x549): undefined reference to `mosquitto_disconnect'
+[0.417s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::publishMsg(QString const&, QByteArray const&)':
+[0.417s] MqttManager.cpp:(.text+0x5ee): undefined reference to `mosquitto_publish'
+[0.417s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::on_connect_cb(mosquitto*, void*, int)':
+[0.417s] MqttManager.cpp:(.text+0x7b4): undefined reference to `mosquitto_subscribe'
+[0.418s] /usr/bin/ld: MqttManager.cpp:(.text+0x7d1): undefined reference to `mosquitto_subscribe'
+[0.418s] /usr/bin/ld: MqttManager.cpp:(.text+0x7ee): undefined reference to `mosquitto_subscribe'
+[0.418s] /usr/bin/ld: MqttManager.cpp:(.text+0x80b): undefined reference to `mosquitto_subscribe'
+[0.418s] /usr/bin/ld: MqttManager.cpp:(.text+0x828): undefined reference to `mosquitto_subscribe'
+[0.418s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o:MqttManager.cpp:(.text+0x845): more undefined references to `mosquitto_subscribe' follow
+[0.418s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o: in function `MqttManager::on_connect_cb(mosquitto*, void*, int)':
+[0.418s] MqttManager.cpp:(.text+0x8a7): undefined reference to `mosquitto_connack_string'
+[0.418s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::receiveFrames()':
+[0.418s] VideoDecoder.cpp:(.text+0xe45): undefined reference to `av_image_alloc(unsigned char**, int*, int, int, AVPixelFormat, int)'
+[0.433s] collect2: error: ld returned 1 exit status
+[0.435s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+[0.435s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[0.435s] gmake: *** [Makefile:91：all] 错误 2
+[0.436s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

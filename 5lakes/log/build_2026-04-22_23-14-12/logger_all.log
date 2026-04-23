@@ -1,0 +1,488 @@
+[0.050s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.050s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x720fca33e2f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x720fca33dde0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x720fca33dde0>>)
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.117s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/drwwwzer/many/RM_myself/5lakes'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'ros'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extensions ['cmake', 'python']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'cmake'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'python'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extensions ['python_setup_py']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws) by extension 'python_setup_py'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'ros'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extensions ['cmake', 'python']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'cmake'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'python'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extensions ['python_setup_py']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper) by extension 'python_setup_py'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/build) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/build) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/build) ignored
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/install) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/install) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/install) ignored
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/log) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/log) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/log) ignored
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'ros'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extensions ['cmake', 'python']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'cmake'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'python'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extensions ['python_setup_py']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src) by extension 'python_setup_py'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/bringup) by extension 'ros'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'zdykhd_ws/Pacific_doorlock_sniper/src/bringup' with type 'ros.ament_cmake' and name 'bringup'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder' with type 'ros.ament_python' and name 'doorlock_decoder'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper) by extension 'ros'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper' with type 'ros.ament_cmake' and name 'doorlock_sniper'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'zdykhd_ws/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'zdykhd_ws/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/realsense2_description) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'zdykhd_ws/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'ros'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'cmake'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'python'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(zdykhd_ws/realsense-ros/scripts) by extension 'python_setup_py'
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.146s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.161s] DEBUG:colcon.colcon_core.verb:Building package 'bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drwwwzer/many/RM_myself/5lakes/build/bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drwwwzer/many/RM_myself/5lakes/install/bringup', 'merge_install': False, 'path': '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/bringup', 'symlink_install': False, 'test_result_base': None}
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'cmake_target' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'cmake_clean_first' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'cmake_force_configure' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'ament_cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'doorlock_sniper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.161s] DEBUG:colcon.colcon_core.verb:Building package 'doorlock_sniper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper', 'merge_install': False, 'path': '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper', 'symlink_install': False, 'test_result_base': None}
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.161s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.161s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'cmake_target' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'cmake_clean_cache' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'cmake_clean_first' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'cmake_force_configure' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'ament_cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'catkin_cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'doorlock_decoder' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.162s] DEBUG:colcon.colcon_core.verb:Building package 'doorlock_decoder' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder', 'merge_install': False, 'path': '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder', 'symlink_install': False, 'test_result_base': None}
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.162s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera', 'merge_install': False, 'path': '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera', 'symlink_install': False, 'test_result_base': None}
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.162s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.162s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description', 'merge_install': False, 'path': '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_description', 'symlink_install': False, 'test_result_base': None}
+[0.162s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.163s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.163s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.163s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera_msgs'
+[0.164s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.164s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.164s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.166s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper' with build type 'ament_cmake'
+[0.166s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_sniper'
+[0.166s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.166s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.167s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/bringup' with build type 'ament_cmake'
+[0.167s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/bringup'
+[0.167s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs -- -j24 -l24
+[0.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper -- -j24 -l24
+[0.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/bringup -- -j24 -l24
+[0.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/bringup -- -j24 -l24
+[0.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/bringup
+[0.220s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[0.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/bringup
+[0.224s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup' for CMake module files
+[0.226s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup' for CMake config files
+[0.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'cmake_prefix_path')
+[0.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/hook/cmake_prefix_path.ps1'
+[0.228s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/hook/cmake_prefix_path.dsv'
+[0.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/hook/cmake_prefix_path.sh'
+[0.230s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/bin'
+[0.230s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/lib/pkgconfig/bringup.pc'
+[0.230s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/lib/python3.10/site-packages'
+[0.230s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/bin'
+[0.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.ps1'
+[0.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.dsv'
+[0.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.sh'
+[0.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.bash'
+[0.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.zsh'
+[0.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/colcon-core/packages/bringup)
+[0.233s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[0.234s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup' for CMake module files
+[0.234s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup' for CMake config files
+[0.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'cmake_prefix_path')
+[0.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/hook/cmake_prefix_path.ps1'
+[0.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/hook/cmake_prefix_path.dsv'
+[0.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/hook/cmake_prefix_path.sh'
+[0.236s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/bin'
+[0.236s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/lib/pkgconfig/bringup.pc'
+[0.236s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/lib/python3.10/site-packages'
+[0.237s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/bin'
+[0.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.ps1'
+[0.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.dsv'
+[0.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.sh'
+[0.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.bash'
+[0.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/bringup/package.zsh'
+[0.239s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/bringup/share/colcon-core/packages/bringup)
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs -- -j24 -l24
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs
+[0.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper -- -j24 -l24
+[0.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper
+[0.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs' for CMake module files
+[0.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs
+[0.391s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs' for CMake config files
+[0.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[0.392s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib'
+[0.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[0.395s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/bin'
+[0.395s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[0.395s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[0.395s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/bin'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[0.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[0.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[0.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[0.397s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[0.397s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs' for CMake module files
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs' for CMake config files
+[0.398s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[0.398s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib'
+[0.398s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/bin'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/bin'
+[0.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[0.400s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[0.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[0.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[0.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[0.400s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[0.401s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera' with build type 'ament_cmake'
+[0.401s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_camera'
+[0.401s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.401s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.402s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[0.402s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/realsense-ros/realsense2_description'
+[0.402s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.402s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(doorlock_sniper)
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper' for CMake module files
+[0.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_sniper
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper' for CMake config files
+[0.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('doorlock_sniper', 'cmake_prefix_path')
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/cmake_prefix_path.ps1'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/cmake_prefix_path.dsv'
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/cmake_prefix_path.sh'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib'
+[0.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('doorlock_sniper', 'ld_library_path_lib')
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/ld_library_path_lib.ps1'
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/ld_library_path_lib.dsv'
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/ld_library_path_lib.sh'
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/bin'
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/pkgconfig/doorlock_sniper.pc'
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/python3.10/site-packages'
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/bin'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.ps1'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.dsv'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.sh'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.bash'
+[0.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.zsh'
+[0.409s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/colcon-core/packages/doorlock_sniper)
+[0.410s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(doorlock_sniper)
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper' for CMake module files
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper' for CMake config files
+[0.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('doorlock_sniper', 'cmake_prefix_path')
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/cmake_prefix_path.ps1'
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/cmake_prefix_path.dsv'
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/cmake_prefix_path.sh'
+[0.411s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib'
+[0.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('doorlock_sniper', 'ld_library_path_lib')
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/ld_library_path_lib.ps1'
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/ld_library_path_lib.dsv'
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/hook/ld_library_path_lib.sh'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/bin'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/pkgconfig/doorlock_sniper.pc'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib/python3.10/site-packages'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/bin'
+[0.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.ps1'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.dsv'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.sh'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.bash'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/doorlock_sniper/package.zsh'
+[0.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/share/colcon-core/packages/doorlock_sniper)
+[0.414s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder' with build type 'ament_python'
+[0.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('doorlock_decoder', 'ament_prefix_path')
+[0.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/share/doorlock_decoder/hook/ament_prefix_path.ps1'
+[0.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/share/doorlock_decoder/hook/ament_prefix_path.dsv'
+[0.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/share/doorlock_decoder/hook/ament_prefix_path.sh'
+[0.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.415s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera -- -j24 -l24
+[0.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description -- -j24 -l24
+[0.540s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder'
+[0.540s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.540s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description -- -j24 -l24
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description
+[0.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description' for CMake module files
+[0.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_description
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description' for CMake config files
+[0.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[0.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/bin'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/lib/python3.10/site-packages'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/bin'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.ps1'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.dsv'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.sh'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.bash'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.zsh'
+[0.555s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[0.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description' for CMake module files
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description' for CMake config files
+[0.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[0.558s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/bin'
+[0.558s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[0.558s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/lib/python3.10/site-packages'
+[0.558s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/bin'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.ps1'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.dsv'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.sh'
+[0.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.bash'
+[0.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/realsense2_description/package.zsh'
+[0.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[0.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/zdykhd_ws/Pacific_doorlock_sniper/src/doorlock_decoder': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages:/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_sniper/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/doorlock_decoder build --build-base /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/build install --record /home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/install.log --single-version-externally-managed install_data
+[0.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera' returned '2': AMENT_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera -- -j24 -l24
+[0.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera' for CMake module files
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera' for CMake config files
+[0.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/lib'
+[0.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/bin'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/lib/python3.10/site-packages'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/bin'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/package.sh'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/package.bash'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[0.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drwwwzer/many/RM_myself/5lakes/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[0.855s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.855s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.855s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[0.855s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.859s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.859s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.859s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.865s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.866s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drwwwzer/many/RM_myself/5lakes/install/local_setup.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/drwwwzer/many/RM_myself/5lakes/install/_local_setup_util_ps1.py'
+[0.868s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drwwwzer/many/RM_myself/5lakes/install/setup.ps1'
+[0.868s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drwwwzer/many/RM_myself/5lakes/install/local_setup.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/drwwwzer/many/RM_myself/5lakes/install/_local_setup_util_sh.py'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drwwwzer/many/RM_myself/5lakes/install/setup.sh'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drwwwzer/many/RM_myself/5lakes/install/local_setup.bash'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drwwwzer/many/RM_myself/5lakes/install/setup.bash'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drwwwzer/many/RM_myself/5lakes/install/local_setup.zsh'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drwwwzer/many/RM_myself/5lakes/install/setup.zsh'

@@ -1,0 +1,25 @@
+[33mCMake Warning at CMakeLists.txt:23 (message):
+  Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+  be disabled or mocked.
+
+[0m
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In constructor ‘[01m[KVideoDecoder::VideoDecoder(AVCodecID, QObject*)[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+   40 |     [01;31m[Km_extradataApplied[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::resetDecoder()[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+   95 |     [01;31m[Km_extradataApplied[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::processBuffer()[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:333:22:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+  333 |               if (![01;31m[Km_extradataApplied[m[K) {
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:338:22:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+  338 |               if (![01;31m[Km_extradataApplied[m[K) {
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

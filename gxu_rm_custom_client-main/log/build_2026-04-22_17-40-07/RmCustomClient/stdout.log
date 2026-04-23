@@ -1,0 +1,45 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found WrapOpenGL: TRUE  
+-- Found XKB: /usr/lib/x86_64-linux-gnu/libxkbcommon.so (found suitable version "1.4.0", minimum required is "0.5.0") 
+-- Found WrapVulkanHeaders: /usr/include  
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for modules 'libavcodec;libavutil;libswscale'
+--   Found libavcodec, version 58.134.100
+--   Found libavutil, version 56.70.100
+--   Found libswscale, version 5.9.100
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[  9%] [34m[1mRunning cpp protocol buffer compiler on model/messages.proto[0m
+[ 18%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[ 18%] Built target RmCustomClient_autogen
+[ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/main.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/RmCustomClient_autogen/mocs_compilation.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/model/RobotState.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/VideoReceiver.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/messages.pb.cc.o[0m
+[100%] [32m[1mLinking CXX executable RmCustomClient[0m

@@ -1,0 +1,52 @@
+[33mCMake Warning at CMakeLists.txt:23 (message):
+  Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+  be disabled or mocked.
+
+[0m
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::VideoDecoder(AVCodecID, QObject*)':
+VideoDecoder.cpp:(.text+0x147): undefined reference to `av_log_set_level'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x151): undefined reference to `avcodec_find_decoder'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x1cb): undefined reference to `avcodec_alloc_context3'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x221): undefined reference to `avcodec_open2'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x28f): undefined reference to `av_parser_init'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x31a): undefined reference to `av_packet_alloc'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x327): undefined reference to `av_frame_alloc'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x334): undefined reference to `av_frame_alloc'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::~VideoDecoder()':
+VideoDecoder.cpp:(.text+0x487): undefined reference to `sws_freeContext'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x4a4): undefined reference to `av_parser_close'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x4c1): undefined reference to `av_frame_free'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x4de): undefined reference to `av_frame_free'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x4fb): undefined reference to `av_packet_free'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x518): undefined reference to `avcodec_close'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x528): undefined reference to `avcodec_free_context'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::resetDecoder()':
+VideoDecoder.cpp:(.text+0x846): undefined reference to `avcodec_flush_buffers'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x863): undefined reference to `av_parser_close'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x875): undefined reference to `av_parser_init'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::receiveFrames()':
+VideoDecoder.cpp:(.text+0xb5d): undefined reference to `avcodec_receive_frame'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xcd6): undefined reference to `av_frame_unref'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xd8a): undefined reference to `sws_freeContext'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xdc8): undefined reference to `sws_getContext'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xdfa): undefined reference to `av_frame_unref'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xe45): undefined reference to `av_image_alloc(unsigned char**, int*, int, int, AVPixelFormat, int)'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xeb7): undefined reference to `av_frame_unref'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xf6b): undefined reference to `sws_freeContext'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xfac): undefined reference to `sws_getContext'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xfda): undefined reference to `av_freep'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0xfed): undefined reference to `av_frame_unref'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x1046): undefined reference to `sws_scale'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x1063): undefined reference to `av_frame_unref'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x1203): undefined reference to `av_freep'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::applyExtradata()':
+VideoDecoder.cpp:(.text+0x142d): undefined reference to `avcodec_close'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x144d): undefined reference to `avcodec_open2'
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::processBuffer()':
+VideoDecoder.cpp:(.text+0x1949): undefined reference to `av_packet_alloc'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x198a): undefined reference to `avcodec_send_packet'
+/usr/bin/ld: VideoDecoder.cpp:(.text+0x1a3d): undefined reference to `av_packet_free'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

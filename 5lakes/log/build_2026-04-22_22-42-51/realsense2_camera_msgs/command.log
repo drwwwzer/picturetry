@@ -1,0 +1,1 @@
+Invoking command in '/home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/5lakes/build/realsense2_camera_msgs -- -j24 -l24

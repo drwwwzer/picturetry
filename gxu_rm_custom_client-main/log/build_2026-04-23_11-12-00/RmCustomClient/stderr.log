@@ -1,0 +1,11 @@
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvirtual void VideoDecoder::run()[m[K’:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:121:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  121 |         } [01;31m[Kelse[m[K {
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K At global scope:
+[01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:125:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  125 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

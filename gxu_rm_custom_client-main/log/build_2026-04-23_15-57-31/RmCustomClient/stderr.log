@@ -1,0 +1,5 @@
+[33mCMake Warning at CMakeLists.txt:23 (message):
+  Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+  be disabled or mocked.
+
+[0m

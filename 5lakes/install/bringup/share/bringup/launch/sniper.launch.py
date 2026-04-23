@@ -23,7 +23,7 @@ def generate_launch_description():
     hard_max_bitrate_kbytes = 14.0     # 传输硬上限（由发送窗口限速实现）
     target_bitrate_kbps = int(target_bitrate_kbytes * 8.0)  # x264 参数单位是 kbps
     # x264_preset = 'veryslow'           # x264 速度预设：slow 会比veryslow更省时延但画质/压缩效率略降
-    x264_preset = 'slower'
+    x264_preset = 'superfast'          # x264 速度预设：ultrafast/superfast/veryfast/faster/fast/medium/slow/slower/veryslow/placebo
     #ultrafast superfast veryfast faster fast medium slow slower veryslow placebo	
     
     
@@ -45,7 +45,7 @@ def generate_launch_description():
                     {'target_bitrate': target_bitrate_kbps},             # 目标编码码率(kbps)，5kB/s -> 40kbps
                     {'x264_preset': x264_preset},                        # x264 preset: auto/ultrafast/.../veryslow
                     {'output_fps': 25},                                  # 输出帧率原60
-                    {'packet_size': 300},                                # 固定分包大小(byte)
+                    {'packet_size': 150},                                # 固定分包大小(byte)
                     {'enable_display': False},                           # 关闭编码端显示，避免与解码显示重复
                     {'debug_dump_enable': debug_dump_enable},            # 开启后每N帧保存编码端窗口画面
                     {'debug_dump_every_n_frames': debug_dump_every_n_frames},  # 编码端保存间隔(帧)
@@ -55,8 +55,8 @@ def generate_launch_description():
                     {'output_size': encode_size},                        # 编码分辨率
                     {'force_monochrome': False},                         # 强制全画面灰度
                     {'bandwidth_limit_kbytes': hard_max_bitrate_kbytes}, # 发送硬上限(kB/s)
-                    {'bandwidth_window_s': 0.3},                         # 低延迟优先：缩短限速窗口，原来0.5
-                    {'max_tx_delay_s': 0.10}                             # 低延迟优先：严格压缩发送队列时延，原来0.15
+                    {'bandwidth_window_s': 0.5},                         # 低延迟优先：缩短限速窗口，原来0.5
+                    {'max_tx_delay_s': 0.20}                             # 低延迟优先：严格压缩发送队列时延，原来0.15
                 ],
                 extra_arguments=[{'use_intra_process_comms': True}]      # 启用进程内零拷贝
             )

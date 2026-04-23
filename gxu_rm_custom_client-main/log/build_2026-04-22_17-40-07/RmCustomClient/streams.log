@@ -1,0 +1,101 @@
+[0.005s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src -DCMAKE_INSTALL_PREFIX=/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/install/RmCustomClient
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.116s] -- Detecting C compiler ABI info
+[0.199s] -- Detecting C compiler ABI info - done
+[0.208s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.208s] -- Detecting C compile features
+[0.208s] -- Detecting C compile features - done
+[0.210s] -- Detecting CXX compiler ABI info
+[0.303s] -- Detecting CXX compiler ABI info - done
+[0.308s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.308s] -- Detecting CXX compile features
+[0.308s] -- Detecting CXX compile features - done
+[0.314s] -- Looking for pthread.h
+[0.397s] -- Looking for pthread.h - found
+[0.398s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.468s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.469s] -- Found Threads: TRUE  
+[0.478s] -- Performing Test HAVE_STDATOMIC
+[0.570s] -- Performing Test HAVE_STDATOMIC - Success
+[0.570s] -- Found WrapAtomic: TRUE  
+[0.592s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[0.592s] -- Found WrapOpenGL: TRUE  
+[0.644s] -- Found XKB: /usr/lib/x86_64-linux-gnu/libxkbcommon.so (found suitable version "1.4.0", minimum required is "0.5.0") 
+[0.650s] -- Found WrapVulkanHeaders: /usr/include  
+[0.687s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.687s] [33mCMake Warning at CMakeLists.txt:23 (message):
+[0.687s]   Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+[0.687s]   be disabled or mocked.
+[0.687s] 
+[0.687s] [0m
+[0.690s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.691s] -- Checking for modules 'libavcodec;libavutil;libswscale'
+[0.708s] --   Found libavcodec, version 58.134.100
+[0.723s] --   Found libavutil, version 56.70.100
+[0.738s] --   Found libswscale, version 5.9.100
+[0.793s] -- Configuring done
+[0.823s] -- Generating done
+[0.825s] -- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[0.830s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '0': /usr/bin/cmake /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src -DCMAKE_INSTALL_PREFIX=/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/install/RmCustomClient
+[0.832s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.878s] [  9%] [34m[1mRunning cpp protocol buffer compiler on model/messages.proto[0m
+[0.925s] [ 18%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[1.085s] [ 18%] Built target RmCustomClient_autogen
+[1.098s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/main.cpp.o[0m
+[1.098s] [ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/RmCustomClient_autogen/mocs_compilation.cpp.o[0m
+[1.098s] [ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/model/RobotState.cpp.o[0m
+[1.099s] [ 54%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[1.102s] [ 72%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/MqttManager.cpp.o[0m
+[1.103s] [ 72%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
+[1.103s] [ 81%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/network/VideoReceiver.cpp.o[0m
+[1.103s] [ 90%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/messages.pb.cc.o[0m
+[2.325s] [100%] [32m[1mLinking CXX executable RmCustomClient[0m
+[2.505s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::VideoDecoder(AVCodecID, QObject*)':
+[2.505s] VideoDecoder.cpp:(.text+0x147): undefined reference to `av_log_set_level'
+[2.505s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x151): undefined reference to `avcodec_find_decoder'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x1cb): undefined reference to `avcodec_alloc_context3'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x221): undefined reference to `avcodec_open2'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x28f): undefined reference to `av_parser_init'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x31a): undefined reference to `av_packet_alloc'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x327): undefined reference to `av_frame_alloc'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x334): undefined reference to `av_frame_alloc'
+[2.506s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::~VideoDecoder()':
+[2.506s] VideoDecoder.cpp:(.text+0x487): undefined reference to `sws_freeContext'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x4a4): undefined reference to `av_parser_close'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x4c1): undefined reference to `av_frame_free'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x4de): undefined reference to `av_frame_free'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x4fb): undefined reference to `av_packet_free'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x518): undefined reference to `avcodec_close'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x528): undefined reference to `avcodec_free_context'
+[2.506s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::resetDecoder()':
+[2.506s] VideoDecoder.cpp:(.text+0x846): undefined reference to `avcodec_flush_buffers'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x863): undefined reference to `av_parser_close'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x875): undefined reference to `av_parser_init'
+[2.506s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::receiveFrames()':
+[2.506s] VideoDecoder.cpp:(.text+0xb5d): undefined reference to `avcodec_receive_frame'
+[2.506s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xcd6): undefined reference to `av_frame_unref'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xd8a): undefined reference to `sws_freeContext'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xdc8): undefined reference to `sws_getContext'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xdfa): undefined reference to `av_frame_unref'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xe45): undefined reference to `av_image_alloc(unsigned char**, int*, int, int, AVPixelFormat, int)'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xeb7): undefined reference to `av_frame_unref'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xf6b): undefined reference to `sws_freeContext'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xfac): undefined reference to `sws_getContext'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xfda): undefined reference to `av_freep'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0xfed): undefined reference to `av_frame_unref'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x1046): undefined reference to `sws_scale'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x1063): undefined reference to `av_frame_unref'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x1203): undefined reference to `av_freep'
+[2.507s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::applyExtradata()':
+[2.507s] VideoDecoder.cpp:(.text+0x142d): undefined reference to `avcodec_close'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x144d): undefined reference to `avcodec_open2'
+[2.507s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::processBuffer()':
+[2.507s] VideoDecoder.cpp:(.text+0x1949): undefined reference to `av_packet_alloc'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x198a): undefined reference to `avcodec_send_packet'
+[2.507s] /usr/bin/ld: VideoDecoder.cpp:(.text+0x1a3d): undefined reference to `av_packet_free'
+[2.521s] collect2: error: ld returned 1 exit status
+[2.522s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+[2.523s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[2.523s] gmake: *** [Makefile:91：all] 错误 2
+[2.524s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

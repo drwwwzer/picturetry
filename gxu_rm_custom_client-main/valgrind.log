@@ -1,0 +1,1306 @@
+==89909== Memcheck, a memory error detector
+==89909== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==89909== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==89909== Command: ./build/RmCustomClient/RmCustomClient
+==89909== 
+Warning: Ignoring WAYLAND_DISPLAY on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+==89909== Invalid read of size 8
+==89909==    at 0x40286A0: strncmp (strcmp.S:170)
+==89909==    by 0x400668D: is_dst (dl-load.c:216)
+==89909==    by 0x400810E: _dl_dst_count (dl-load.c:253)
+==89909==    by 0x400810E: expand_dynamic_string_token (dl-load.c:395)
+==89909==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==89909==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==  Address 0xfa4c011 is 1 bytes inside a block of size 8 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==89909==    by 0x40271DF: strdup (strdup.c:42)
+==89909==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400E34D: _dl_open (dl-open.c:883)
+==89909== 
+==89909== Invalid read of size 8
+==89909==    at 0x40286A8: strncmp (strcmp.S:172)
+==89909==    by 0x400668D: is_dst (dl-load.c:216)
+==89909==    by 0x400810E: _dl_dst_count (dl-load.c:253)
+==89909==    by 0x400810E: expand_dynamic_string_token (dl-load.c:395)
+==89909==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==89909==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==  Address 0xfa4c019 is 1 bytes after a block of size 8 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==89909==    by 0x40271DF: strdup (strdup.c:42)
+==89909==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400E34D: _dl_open (dl-open.c:883)
+==89909== 
+==89909== Invalid read of size 8
+==89909==    at 0x40286A0: strncmp (strcmp.S:170)
+==89909==    by 0x400668D: is_dst (dl-load.c:216)
+==89909==    by 0x4007F79: _dl_dst_substitute (dl-load.c:295)
+==89909==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==89909==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==  Address 0xfa4c011 is 1 bytes inside a block of size 8 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==89909==    by 0x40271DF: strdup (strdup.c:42)
+==89909==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400E34D: _dl_open (dl-open.c:883)
+==89909== 
+==89909== Invalid read of size 8
+==89909==    at 0x40286A8: strncmp (strcmp.S:172)
+==89909==    by 0x400668D: is_dst (dl-load.c:216)
+==89909==    by 0x4007F79: _dl_dst_substitute (dl-load.c:295)
+==89909==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==89909==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==  Address 0xfa4c019 is 1 bytes after a block of size 8 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==89909==    by 0x40271DF: strdup (strdup.c:42)
+==89909==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==89909==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==89909==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==89909==    by 0x4003494: openaux (dl-deps.c:64)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==89909==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==89909==    by 0x7C75B47: _dl_catch_exception (dl-error-skeleton.c:208)
+==89909==    by 0x400E34D: _dl_open (dl-open.c:883)
+==89909== 
+VideoReceiver UDP socket bound to port 3334 Buffer size up to 8MB
+Connecting to generic MQTT broker at "127.0.0.1" : 3333
+📸 Switched to Official HEVC decoder
+Mosquitto MQTT Connected! Subscribing to proto topics...
+🚀 VideoDecoder thread started
+==89909== Syscall param writev(vector[...]) points to uninitialised byte(s)
+==89909==    at 0x7C1BB0D: __writev (writev.c:26)
+==89909==    by 0x7C1BB0D: writev (writev.c:24)
+==89909==    by 0xD650A52: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==89909==    by 0xD650B1F: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==89909==    by 0xD650D76: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==89909==    by 0xD651DBF: xcb_flush (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==89909==    by 0x1063B3B7: ??? (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x6E03C0C: QWindowPrivate::applyCursor() (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6E094AE: QWindowPrivate::setCursor(QCursor const*) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x4A4544C: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4)
+==89909==    by 0x4A5000B: QWidget::setCursor(QCursor const&) (in /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4)
+==89909==    by 0x1206B5: MainWindow::setMouseLocked(bool) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x122D23: MainWindow::mousePressEvent(QMouseEvent*) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==  Address 0xfa59dee is 4,590 bytes inside a block of size 21,168 alloc'd
+==89909==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0xD653204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==89909==    by 0xD653E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==89909==    by 0xBF41EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==89909==    by 0xBF31B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==89909==    by 0x10626A99: QXcbBasicConnection::QXcbBasicConnection(char const*) (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x106215E5: QXcbConnection::QXcbConnection(QXcbNativeInterface*, bool, unsigned int, char const*) (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x106421CC: QXcbIntegration::QXcbIntegration(QList<QString> const&, int&, char**) (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x485D512: ??? (in /usr/lib/x86_64-linux-gnu/qt6/plugins/platforms/libqxcb.so)
+==89909==    by 0x6DE969F: QPlatformIntegrationFactory::create(QString const&, QList<QString> const&, int&, char**, QString const&) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6DBE950: QGuiApplicationPrivate::createPlatformIntegration() (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6DC06D7: QGuiApplicationPrivate::createEventDispatcher() (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==  Uninitialised value was created by a heap allocation
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x4869693: xcb_image_create (in /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0)
+==89909==    by 0x486A556: xcb_image_native (in /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0)
+==89909==    by 0x486A80A: xcb_create_pixmap_from_bitmap_data (in /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0)
+==89909==    by 0x1063AAAA: ??? (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x1063AEC3: ??? (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x1063B364: ??? (in /usr/lib/x86_64-linux-gnu/libQt6XcbQpa.so.6.2.4)
+==89909==    by 0x6E03C0C: QWindowPrivate::applyCursor() (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6E094AE: QWindowPrivate::setCursor(QCursor const*) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x4A4544C: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4)
+==89909==    by 0x4A5000B: QWidget::setCursor(QCursor const&) (in /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4)
+==89909==    by 0x1206B5: MainWindow::setMouseLocked(bool) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909== 
+Mouse Locked! Press ESC to unlock.
+📸 Switched to Custom H.264 decoder
+📸 图传切换至: Custom ByteBlock H.264
+🚀 VideoDecoder thread started
+Mouse Unlocked.
+🔍 NAL type: 7  size: 28
+🔍 NAL type: 8  size: 8
+==89909== Thread 10 VideoDecoder:
+==89909== Conditional jump or move depends on uninitialised value(s)
+==89909==    at 0x54FC8FC: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x54FCF03: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x5535926: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x5536F21: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x5258BB2: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x53805D2: avcodec_open2 (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x127FC8: VideoDecoder::applyExtradata() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1284A0: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909==  Uninitialised value was created by a heap allocation
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x75E3C53: QArrayData::allocate(QArrayData**, long long, long long, long long, QArrayData::AllocationOption) (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x759C283: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x759C9AA: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x759B7F7: QByteArray::insert(long long, QByteArrayView) (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x128781: QByteArray::append(QByteArrayView) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x128720: QByteArray::append(char const*, long long) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x128452: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📌 Extradata applied, size: 36
+🔍 NAL type: 6  size: 114
+🔍 NAL type: 5  size: 94
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x1557AD7F: ???
+==89909==    by 0x2BA5E67F: ???
+==89909==  Address 0x2bae57c0 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+🔍 NAL type: 5  size: 116
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x156B5FFF: ???
+==89909==    by 0x1572E07F: ???
+==89909==  Address 0x15721f40 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+🔍 NAL type: 5  size: 19
+🔍 NAL type: 5  size: 41
+🔍 NAL type: 1  size: 77
+🔍 NAL type: 1  size: 27
+🔍 NAL type: 1  size: 118
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 4
+✅ Decoded frame 30 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 27
+✅ Decoded frame 60 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 90 size: 300 x 300
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x144ED3BF: ???
+==89909==    by 0x144F7CFF: ???
+==89909==  Address 0x2dbbe280 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x14FD97FF: ???
+==89909==    by 0x1519A1BF: ???
+==89909==  Address 0x2d156d00 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 29
+✅ Decoded frame 120 size: 300 x 300
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 39
+📦 VideoDecoder::pushData, size: 150 queue size: 89
+==89909== Invalid read of size 8
+==89909==    at 0x54FC8EA: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x54FCF03: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x5535926: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x5536F21: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x5258BB2: ??? (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x53805D2: avcodec_open2 (in /usr/lib/x86_64-linux-gnu/libavcodec.so.58.134.100)
+==89909==    by 0x127FC8: VideoDecoder::applyExtradata() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1284A0: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909==  Address 0xf9d7c6c is 28 bytes inside a block of size 34 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x75E3C53: QArrayData::allocate(QArrayData**, long long, long long, long long, QArrayData::AllocationOption) (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x759C283: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x759C9AA: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x759B7F7: QByteArray::insert(long long, QByteArrayView) (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x128781: QByteArray::append(QByteArrayView) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x128720: QByteArray::append(char const*, long long) (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x128452: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📌 Extradata applied, size: 16
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+📦 VideoDecoder::pushData, size: 150 queue size: 6
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFB955BF: ???
+==89909==    by 0xFC0AEFF: ???
+==89909==  Address 0x15bddd00 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x13DCCC3F: ???
+==89909==    by 0x13D2A2BF: ???
+==89909==  Address 0x159de380 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 150 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 4
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+📦 VideoDecoder::pushData, size: 150 queue size: 35
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 180 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+✅ Decoded frame 210 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x13E7A03F: ???
+==89909==    by 0x148095FF: ???
+==89909==  Address 0x16435b80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x143952BF: ???
+==89909==    by 0x144F7CFF: ???
+==89909==  Address 0x2e46df80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 240 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 5
+✅ Decoded frame 270 size: 300 x 300
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 34
+✅ Decoded frame 300 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x151D843F: ???
+==89909==    by 0x13EE9DBF: ???
+==89909==  Address 0x2e0fee80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📨 RobotState: CustomByteBlock received, size: 150
+✅ Decoded frame 330 size: 300 x 300
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x15A0B8BF: ???
+==89909==    by 0x15721FBF: ???
+==89909==  Address 0x152cc0f0 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 360 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 4
+✅ Decoded frame 390 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 41
+📦 VideoDecoder::pushData, size: 150 queue size: 91
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xF97CCBF: ???
+==89909==    by 0xF9AFCFF: ???
+==89909==  Address 0x163ddd00 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFA69AFF: ???
+==89909==    by 0xFB3DCBF: ???
+==89909==  Address 0x2dc6df80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 420 size: 300 x 300
+✅ Decoded frame 450 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 480 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x14FA8DFF: ???
+==89909==    by 0x156AA23F: ???
+==89909==  Address 0x2d156d00 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x166452FF: ???
+==89909==    by 0xF9F9A7F: ???
+==89909==  Address 0x2d366400 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+✅ Decoded frame 510 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 16
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 540 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 570 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 9
+📦 VideoDecoder::pushData, size: 150 queue size: 59
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 27
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFC1B6FF: ???
+==89909==    by 0xFCD73BF: ???
+==89909==  Address 0x16435b80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFC0AEFF: ???
+==89909==    by 0xFD5133F: ???
+==89909==  Address 0x2f06df80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 600 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 630 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 660 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFB955BF: ???
+==89909==    by 0x2E49E47F: ???
+==89909==  Address 0x2e06df80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 690 size: 300 x 300
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x13E79FFF: ???
+==89909==    by 0x148095FF: ???
+==89909==  Address 0x2f46df80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 31
+📦 VideoDecoder::pushData, size: 150 queue size: 81
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+📦 VideoDecoder::pushData, size: 150 queue size: 101
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xF9AFCFF: ???
+==89909==    by 0xFA69AFF: ???
+==89909==  Address 0x15323f70 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFB3DCBF: ???
+==89909==    by 0xFC0AEFF: ???
+==89909==  Address 0x15821e60 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFD5133F: ???
+==89909==    by 0x13D2A27F: ???
+==89909==  Address 0x15bddd00 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 720 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 750 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 780 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 0
+📨 RobotState: CustomByteBlock received, size: 150
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x15323FFF: ???
+==89909==    by 0xF98BDBF: ???
+==89909==  Address 0x2ef66400 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFA69AFF: ???
+==89909==    by 0x14462BFF: ???
+==89909==  Address 0x2f6b6700 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 810 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 16
+✅ Decoded frame 840 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 870 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 31
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 81
+✅ Decoded frame 900 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x156B5FFF: ???
+==89909==    by 0x13D830FF: ???
+==89909==  Address 0x159d96e0 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x146089FF: ???
+==89909==    by 0x147704FF: ???
+==89909==  Address 0x2bb3d640 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 930 size: 300 x 300
+✅ Decoded frame 960 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 990 size: 300 x 300
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFB3DCBF: ???
+==89909==    by 0xFB955BF: ???
+==89909==  Address 0x157ddd00 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFCD73BF: ???
+==89909==    by 0xFD5133F: ???
+==89909==  Address 0x15835b80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 0
+✅ Decoded frame 1020 size: 300 x 300
+✅ Decoded frame 1050 size: 300 x 300
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 7
+✅ Decoded frame 1080 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFC1B6FF: ???
+==89909==    by 0xF9AFCFF: ???
+==89909==  Address 0x15b85e80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFA69AFF: ???
+==89909==    by 0x13DD75FF: ???
+==89909==  Address 0x30bbe280 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 1110 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+📦 VideoDecoder::pushData, size: 150 queue size: 2
+✅ Decoded frame 1140 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 1170 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x148095FF: ???
+==89909==    by 0x14E834FF: ???
+==89909==  Address 0x312b6700 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📦 VideoDecoder::pushData, size: 150 queue size: 1
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFD5133F: ???
+==89909==    by 0x13F25E7F: ???
+==89909==  Address 0x2ef66400 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 1200 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 1230 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+📦 VideoDecoder::pushData, size: 150 queue size: 10
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 45
+✅ Decoded frame 1260 size: 300 x 300
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 27
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xF9AFCFF: ???
+==89909==    by 0x144F7CFF: ???
+==89909==  Address 0x305aeb80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFA69AFF: ???
+==89909==    by 0x146089FF: ???
+==89909==  Address 0x2f30e580 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 1290 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 41
+✅ Decoded frame 1320 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+✅ Decoded frame 1350 size: 300 x 300
+📌 Extradata applied, size: 36
+📨 RobotState: CustomByteBlock received, size: 150
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFB3DCBF: ???
+==89909==    by 0xFC1B6FF: ???
+==89909==  Address 0x16645280 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+📦 VideoDecoder::pushData, size: 150 queue size: 20
+❌ Send packet error: -1094995529
+✅ Decoded frame 1380 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 1410 size: 300 x 300
+✅ Decoded frame 1440 size: 300 x 300
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 8
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x144F7CFF: ???
+==89909==    by 0x146089FF: ???
+==89909==  Address 0x15b85e80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x147704FF: ???
+==89909==    by 0x1477ABFF: ???
+==89909==  Address 0x16435b80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 1470 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 33
+✅ Decoded frame 1500 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 1530 size: 300 x 300
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 2
+📦 VideoDecoder::pushData, size: 150 queue size: 52
+✅ Decoded frame 1560 size: 300 x 300
+📌 Extradata applied, size: 16
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📦 VideoDecoder::pushData, size: 150 queue size: 3
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📌 Extradata applied, size: 36
+📨 RobotState: CustomByteBlock received, size: 150
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📦 VideoDecoder::pushData, size: 150 queue size: 0
+✅ Decoded frame 1590 size: 300 x 300
+❌ Send packet error: -1094995529
+❌ Send packet error: -1094995529
+📨 RobotState: CustomByteBlock received, size: 150
+📨 RobotState: CustomByteBlock received, size: 150
+✅ Decoded frame 1620 size: 300 x 300
+📦 VideoDecoder::pushData, size: 150 queue size: 3
+📦 VideoDecoder::pushData, size: 150 queue size: 53
+✅ Decoded frame 1650 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x13E79FFF: ???
+==89909==    by 0x1480963F: ???
+==89909==  Address 0x15d67f10 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0x156AA23F: ???
+==89909==    by 0x15721FBF: ???
+==89909==  Address 0x2e0fee80 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 
+✅ Decoded frame 1680 size: 300 x 300
+❌ Send packet error: -1094995529
+✅ Decoded frame 1710 size: 300 x 300
+✅ Decoded frame 1740 size: 300 x 300
+📌 Extradata applied, size: 36
+==89909== Invalid write of size 8
+==89909==    at 0x68F6AA8: ??? (in /usr/lib/x86_64-linux-gnu/libswscale.so.5.9.100)
+==89909==    by 0xFB3DCBF: ???
+==89909==    by 0xFAE497F: ???
+==89909==  Address 0x2eeb6700 is 0 bytes after a block of size 360,000 alloc'd
+==89909==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89909==    by 0x6D6C10F: QImageData::create(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3BE: QImage::QImage(QSize const&, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x6D6C3FC: QImage::QImage(int, int, QImage::Format) (in /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4)
+==89909==    by 0x127C75: VideoDecoder::receiveFrames() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x12851D: VideoDecoder::processBuffer() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x1278CD: VideoDecoder::run() (in /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient/RmCustomClient)
+==89909==    by 0x7643FCE: ??? (in /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4)
+==89909==    by 0x7B95AC2: start_thread (pthread_create.c:442)
+==89909==    by 0x7C26A83: clone (clone.S:100)
+==89909== 

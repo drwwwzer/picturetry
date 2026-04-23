@@ -11,41 +11,33 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    // Default window size for a modern UI (eg. 720p or 1080p stream) 
     resize(1280, 720);
     setWindowTitle("RoboMaster Custom Client");
 
-    // 初始化网络与解码层
+        // 初始化网络层
     m_videoReceiver = new VideoReceiver(3334, this);
-    m_videoDecoder = new VideoDecoder(AV_CODEC_ID_HEVC, this);        // 官方 UDP HEVC 流
-    m_customVideoDecoder = new VideoDecoder(AV_CODEC_ID_H264, this);  // 自定义 MQTT H264 流
-    
     m_mqttManager = new MqttManager("101", this);
-    m_mqttManager->connectToBroker("192.168.12.1", 3333);//原始为192.168.1.30
+    m_mqttManager->connectToBroker("127.0.0.1", 3333);
 
-    // 绑定 UDP 数据流到解码线程
-    connect(m_videoReceiver, &VideoReceiver::dataReceived, m_videoDecoder, &VideoDecoder::pushData);
-    
-    // 绑定 MQTT 0x0310 自定义数据流到 自定义图传解码线程
-    connect(&RobotState::instance(), &RobotState::customVideoReceived, m_customVideoDecoder, &VideoDecoder::pushData, Qt::QueuedConnection);
-    
-    // 绑定解码线程输出到主线程渲染
-    connect(m_videoDecoder, &VideoDecoder::frameReady, this, &MainWindow::onOfficialFrameReady, Qt::QueuedConnection);
-    connect(m_customVideoDecoder, &VideoDecoder::frameReady, this, &MainWindow::onCustomFrameReady, Qt::QueuedConnection);
+    // 固定使用 H.264 解码器，直接连接 UDP 数据源
+    m_currentDecoder = new VideoDecoder(AV_CODEC_ID_H264, this);
+    connect(m_videoReceiver, &VideoReceiver::dataReceived,
+            m_currentDecoder, &VideoDecoder::pushData);
+    connect(m_videoReceiver, &VideoReceiver::packetLossDetected,
+            m_currentDecoder, &VideoDecoder::resetDecoder);
+    connect(m_currentDecoder, &VideoDecoder::frameReady,
+            this, &MainWindow::onCustomFrameReady, Qt::QueuedConnection);
+    m_currentDecoder->start(QThread::HighPriority);
+    m_useCustomVideo = true;  // 强制使用自定义模式显示
 
     // 绑定数据模型变化到UI更新
     connect(&RobotState::instance(), &RobotState::stateUpdated, this, [this](){ update(); });
-    
 
-    // 启动解码线程并赋予高线程优先级，保障其吞吐能力
-    m_videoDecoder->start(QThread::HighPriority);
-    m_customVideoDecoder->start(QThread::HighPriority);
-
-    // 开启鼠标滑动追踪
+    // 开启鼠标追踪
     setMouseTracking(true);
     QWidget::setMouseTracking(true);
 
-    // 启动75Hz定时器 (约13ms)，满足实战要求的定频发包
+    // 启动75Hz定时器
     m_controlTimer = new QTimer(this);
     connect(m_controlTimer, &QTimer::timeout, this, &MainWindow::onControlTick);
     m_controlTimer->start(13);
@@ -53,13 +45,64 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    m_videoDecoder->stop();
-    m_videoDecoder->wait();
-    m_customVideoDecoder->stop();
-    m_customVideoDecoder->wait();
+    cleanupDecoder();
+    
     if(m_mouseLocked) {
         setMouseLocked(false);
     }
+}
+void MainWindow::cleanupDecoder()
+{
+    if (m_currentDecoder) {
+        m_currentDecoder->stop();
+        m_currentDecoder->wait();
+        
+        // 断开所有与当前解码器的连接
+        disconnect(m_currentDecoder, nullptr, this, nullptr);
+        disconnect(m_videoReceiver, nullptr, m_currentDecoder, nullptr);
+        disconnect(&RobotState::instance(), &RobotState::customVideoReceived, m_currentDecoder, nullptr);
+        
+        delete m_currentDecoder;
+        m_currentDecoder = nullptr;
+    }
+}
+void MainWindow::switchVideoSource(bool useCustom)
+{
+    // 清理旧解码器
+    cleanupDecoder();
+    
+    // 创建新解码器
+    AVCodecID codecId = useCustom ? AV_CODEC_ID_H264 : AV_CODEC_ID_H264;
+    m_currentDecoder = new VideoDecoder(codecId, this);
+    
+    // 连接数据输入
+    if (useCustom) {
+        // 自定义流来自 MQTT
+        connect(&RobotState::instance(), &RobotState::customVideoReceived,
+                m_currentDecoder, &VideoDecoder::pushData, Qt::QueuedConnection);
+    } else {
+        // 官方流来自 UDP
+        connect(m_videoReceiver, &VideoReceiver::dataReceived,
+                m_currentDecoder, &VideoDecoder::pushData);
+    }
+    
+    // 连接丢包重置信号
+    connect(m_videoReceiver, &VideoReceiver::packetLossDetected,
+            m_currentDecoder, &VideoDecoder::resetDecoder);
+    
+    // 连接帧输出到对应的槽
+    if (useCustom) {
+        connect(m_currentDecoder, &VideoDecoder::frameReady,
+                this, &MainWindow::onCustomFrameReady, Qt::QueuedConnection);
+    } else {
+        connect(m_currentDecoder, &VideoDecoder::frameReady,
+                this, &MainWindow::onOfficialFrameReady, Qt::QueuedConnection);
+    }
+    
+    // 启动解码线程
+    m_currentDecoder->start(QThread::HighPriority);
+    
+    qDebug() << "📸 Switched to" << (useCustom ? "Custom H.264" : "Official HEVC") << "decoder";
 }
 
 void MainWindow::onOfficialFrameReady(const QImage &image) {
@@ -317,8 +360,11 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
             setMouseLocked(false);
         } else if (key == Qt::Key_V) {
             m_useCustomVideo = !m_useCustomVideo;
+            switchVideoSource(m_useCustomVideo);  // 动态切换解码器
             qDebug() << "📸 图传切换至:" << (m_useCustomVideo ? "Custom ByteBlock H.264" : "Official UDP HEVC");
-        } else if (key == Qt::Key_W) m_keyboardValue |= (1 << 0);
+        }
+        
+        else if (key == Qt::Key_W) m_keyboardValue |= (1 << 0);
         else if (key == Qt::Key_S) m_keyboardValue |= (1 << 1);
         else if (key == Qt::Key_A) m_keyboardValue |= (1 << 2);
         else if (key == Qt::Key_D) m_keyboardValue |= (1 << 3);

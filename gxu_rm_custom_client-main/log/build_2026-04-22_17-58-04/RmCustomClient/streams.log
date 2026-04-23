@@ -1,0 +1,16 @@
+[0.007s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.076s] [33mCMake Warning at CMakeLists.txt:23 (message):
+[0.076s]   Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+[0.076s]   be disabled or mocked.
+[0.076s] 
+[0.076s] [0m
+[0.080s] -- Configuring done
+[0.095s] -- Generating done
+[0.096s] -- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[0.138s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.161s] [ 18%] Built target RmCustomClient_autogen
+[0.179s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.206s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[0.833s] [ 36%] [32m[1mLinking CXX executable RmCustomClient[0m
+[1.086s] [100%] Built target RmCustomClient
+[1.095s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '0': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

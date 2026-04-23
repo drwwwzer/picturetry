@@ -1,0 +1,19 @@
+running egg_info
+writing ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/dependency_links.txt
+writing entry points to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/entry_points.txt
+writing requirements to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/requires.txt
+writing top-level names to ../../../../build/doorlock_decoder/doorlock_decoder.egg-info/top_level.txt
+reading manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/doorlock_decoder/doorlock_decoder.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../../../build/doorlock_decoder/doorlock_decoder.egg-info to /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/python3.10/site-packages/doorlock_decoder-0.1.0-py3.10.egg-info
+running install_scripts
+Installing decoder_node script to /home/drwwwzer/many/RM_myself/5lakes/install/doorlock_decoder/lib/doorlock_decoder
+writing list of installed files to '/home/drwwwzer/many/RM_myself/5lakes/build/doorlock_decoder/install.log'

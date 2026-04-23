@@ -1,0 +1,34 @@
+[0.008s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.190s] [33mCMake Warning at CMakeLists.txt:23 (message):
+[0.190s]   Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+[0.191s]   be disabled or mocked.
+[0.191s] 
+[0.191s] [0m
+[0.198s] -- Configuring done
+[0.234s] -- Generating done
+[0.238s] -- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[0.278s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.302s] [ 18%] Built target RmCustomClient_autogen
+[0.324s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.352s] [ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o[0m
+[1.239s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In constructor ‘[01m[KVideoDecoder::VideoDecoder(AVCodecID, QObject*)[m[K’:
+[1.239s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+[1.239s]    40 |     [01;31m[Km_extradataApplied[m[K = false;
+[1.239s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.249s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::resetDecoder()[m[K’:
+[1.249s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+[1.249s]    95 |     [01;31m[Km_extradataApplied[m[K = false;
+[1.249s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.261s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:[m[K In member function ‘[01m[Kvoid VideoDecoder::processBuffer()[m[K’:
+[1.261s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:333:22:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+[1.261s]   333 |               if (![01;31m[Km_extradataApplied[m[K) {
+[1.261s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.261s] 
+[1.268s] [01m[K/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/src/video/VideoDecoder.cpp:338:22:[m[K [01;31m[Kerror: [m[K‘[01m[Km_extradataApplied[m[K’ was not declared in this scope
+[1.268s]   338 |               if (![01;31m[Km_extradataApplied[m[K) {
+[1.268s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.268s] 
+[1.372s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:160：CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o] 错误 1
+[1.372s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[1.372s] gmake: *** [Makefile:91：all] 错误 2
+[1.374s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

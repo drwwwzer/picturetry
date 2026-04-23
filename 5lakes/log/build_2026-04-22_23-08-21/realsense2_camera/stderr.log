@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:162 (message):
+  ROS_DISTRO is not defined.
+
+[0m
+gmake: *** [Makefile:782：cmake_check_build_system] 错误 1

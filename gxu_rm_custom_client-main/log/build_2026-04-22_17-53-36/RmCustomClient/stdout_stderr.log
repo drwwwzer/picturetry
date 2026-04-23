@@ -1,0 +1,18 @@
+[33mCMake Warning at CMakeLists.txt:23 (message):
+  Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+  be disabled or mocked.
+
+[0m
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[ 18%] Built target RmCustomClient_autogen
+[35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[ 27%] [32m[1mLinking CXX executable RmCustomClient[0m
+/usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::receiveFrames()':
+VideoDecoder.cpp:(.text+0xe45): undefined reference to `av_image_alloc(unsigned char**, int*, int, int, AVPixelFormat, int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2

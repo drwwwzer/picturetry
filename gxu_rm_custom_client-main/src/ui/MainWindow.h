@@ -43,10 +43,13 @@ private slots:
 
 private:
     VideoReceiver *m_videoReceiver = nullptr;
-    VideoDecoder *m_videoDecoder = nullptr;       // 官方图传 H.265 解码器
-    VideoDecoder *m_customVideoDecoder = nullptr; // 自定义图传 H.264 解码器
+    // VideoDecoder *m_videoDecoder = nullptr;       // 官方图传 H.265 解码器
+    // VideoDecoder *m_customVideoDecoder = nullptr; // 自定义图传 H.264 解码器
     MqttManager *m_mqttManager = nullptr;
+    VideoDecoder *m_currentDecoder = nullptr;  // 当前活动的解码器
     
+    void switchVideoSource(bool useCustom);     // 切换视频源
+    void cleanupDecoder();                      // 清理当前解码
     QImage m_currentFrame;
     bool m_useCustomVideo = false; // 按 V 切换图传源,原为false调试时暂设为true
     

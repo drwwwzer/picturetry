@@ -1,8 +1,0 @@
-[  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
-[ 18%] Built target RmCustomClient_autogen
-[35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
-[ 27%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/RmCustomClient_autogen/mocs_compilation.cpp.o[0m
-[ 36%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/main.cpp.o[0m
-[ 45%] [32mBuilding CXX object CMakeFiles/RmCustomClient.dir/ui/MainWindow.cpp.o[0m
-[ 54%] [32m[1mLinking CXX executable RmCustomClient[0m
-[100%] Built target RmCustomClient

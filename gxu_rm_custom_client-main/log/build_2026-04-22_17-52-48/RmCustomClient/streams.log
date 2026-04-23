@@ -1,0 +1,20 @@
+[0.005s] Invoking command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24
+[0.074s] [33mCMake Warning at CMakeLists.txt:23 (message):
+[0.075s]   Qt6 Mqtt module NOT found! Please install qt6-mqtt-dev.  MQTT features will
+[0.075s]   be disabled or mocked.
+[0.075s] 
+[0.075s] [0m
+[0.078s] -- Configuring done
+[0.095s] -- Generating done
+[0.098s] -- Build files have been written to: /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient
+[0.139s] [  9%] [34m[1mAutomatic MOC and UIC for target RmCustomClient[0m
+[0.163s] [ 18%] Built target RmCustomClient_autogen
+[0.179s] [35m[1mConsolidate compiler generated dependencies of target RmCustomClient[0m
+[0.197s] [ 27%] [32m[1mLinking CXX executable RmCustomClient[0m
+[0.437s] /usr/bin/ld: CMakeFiles/RmCustomClient.dir/video/VideoDecoder.cpp.o: in function `VideoDecoder::receiveFrames()':
+[0.437s] VideoDecoder.cpp:(.text+0xe45): undefined reference to `av_image_alloc(unsigned char**, int*, int, int, AVPixelFormat, int)'
+[0.455s] collect2: error: ld returned 1 exit status
+[0.456s] gmake[2]: *** [CMakeFiles/RmCustomClient.dir/build.make:216：RmCustomClient] 错误 1
+[0.456s] gmake[1]: *** [CMakeFiles/Makefile2:84：CMakeFiles/RmCustomClient.dir/all] 错误 2
+[0.456s] gmake: *** [Makefile:91：all] 错误 2
+[0.458s] Invoked command in '/home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient' returned '2': /usr/bin/cmake --build /home/drwwwzer/many/RM_myself/gxu_rm_custom_client-main/build/RmCustomClient -- -j24 -l24

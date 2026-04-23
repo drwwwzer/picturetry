@@ -21,7 +21,7 @@ public:
     // 接收子线程安全的调用
     void pushData(const QByteArray &data);
     void stop();
-
+    void resetDecoder();   // 🆕 添加这一行
 signals:
     void frameReady(const QImage &image);
 
@@ -32,13 +32,14 @@ private:
     void processBuffer();
     // void processData(const uint8_t *data, int size);
     void receiveFrames(); 
+    // void applyExtradata();
 
     // FFmpeg structures
     const AVCodec *m_codec = nullptr;
     AVCodecContext *m_codecCtx = nullptr;
-    AVCodecParserContext *m_parser = nullptr;
+    //  AVCodecParserContext *m_parser = nullptr;
     AVFrame *m_frame = nullptr;
-    AVFrame *m_rgbFrame = nullptr;
+    // AVFrame *m_rgbFrame = nullptr;
     AVPacket *m_packet = nullptr;
     SwsContext *m_swsCtx = nullptr;
 
@@ -53,6 +54,10 @@ private:
     bool m_running = true;
     QMutex m_mutex;
     QByteArray m_streamBuffer; 
+    // QByteArray m_extradata;  // 存储 SPS + PPS
+    // bool m_extradataReady = false;
+    
+    // bool m_extradataApplied = false;  // 🆕 记录是否已应用 extradata
     std::list<QByteArray> m_queue;
 };
 

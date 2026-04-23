@@ -67,13 +67,15 @@ set(HEADERS
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 # 链接 Qt 和 FFmpeg 和 Protobuf
+# 链接 Qt 和 FFmpeg 和 Protobuf
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Core
     Qt6::Widgets
     Qt6::Network
-    ${FFMPEG_LIBRARIES}
+    ${FFMPEG_LIBRARIES}          # 替换所有单独列出的 FFmpeg 变量
     protobuf::libprotobuf
-    mosquitto
+    mosquitto         
+
 )
 
 if(Qt6Mqtt_FOUND)
